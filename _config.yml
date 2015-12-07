@@ -12,8 +12,8 @@ baseurl: ''
 
 social:
   github: smashdevcode
-  linkedin: 'james-churchill-2a475a6'
-  twitter: 'SmashDev'
+  linkedin: james-churchill-2a475a6
+  twitter: SmashDev
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
@@ -40,4 +40,4 @@ markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
-exclude: ['README.md', 'LICENSE']
+exclude: ['.gitignore', 'README.md', 'LICENSE']
