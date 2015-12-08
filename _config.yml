@@ -4,8 +4,8 @@ name: James Churchill's Blog
 description: Software Developer / .NET Teacher at Treehouse
 
 # Url is currently only used only for the RSS feed in feed.xml
-#url: http://smashdev.com
-url: http://localhost:4000
+url: http://smashdev.com
+#url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
 baseurl: ''
