@@ -1,3 +1,28 @@
+
+TODO
+
+Finish downloading images and updating all image references
+    Add captions
+    Center
+
+Add updated code highlighting
+
+Fix line wrapping in posts
+
+Update the "About" page
+
+Move the HTML pages into subfolders in order to have path approach to URLs
+
+Add photo
+
+Adjust color scheme
+
+Update README file
+
+Finish writing Surface comparison post
+
+
+
 Jekyll Clean Dark
 ============
 
