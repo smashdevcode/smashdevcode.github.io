@@ -14,7 +14,7 @@ While you can use Code First with an existing database, one of the most interest
 
 This blog post will provide a walkthrough in setting up a data layer using Entity Framework Code First. This data layer will eventually be used by a web site, cleverly named Calorie Counter, which will allow users to count calories and track their weight on a daily basis.
 
-**Getting Started**
+## Getting Started
 
 Let’s get started by setting up our Visual Studio projects. I’ll be using Visual Studio 2012, but you can also use Visual Studio 2010 if you haven’t gotten around to installing the latest version.
 
@@ -38,7 +38,7 @@ At this point, your Solution should look like this in the Solution Explorer:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/12091319094.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319094.png)
 
-**Using NuGet to Add a Reference to Entity Framework**
+### Using NuGet to Add a Reference to Entity Framework
 
 To complete our initial project setup, we’ll use NuGet to add a reference to the Entity Framework library (see [http://nuget.org/](http://nuget.org/) for information on installing and using NuGet). Open the Manage NuGet Packages dialog (from within the Solution Explorer, right click on the CalorieCounter.Data project and select “Manage NuGet Packages…”) and select “Online” as the packages source. If you are sorting by the most downloads, Entity Framework should be near the top of the list (at the time of this writing, it’s the second most downloaded item). Select it in the list and click “Install”. You’ll be prompted to accept a license agreement, after which the package manager will add a number of references to your project (EntityFramework, System.ComponentModel.DataAnnotations, and System.Data.Entity) and two files to the root of the project (App.config and packages.config).
 
@@ -48,23 +48,23 @@ Here’s an updated look at your Solution:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/12091319096.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319096.png)
 
-**Defining Our Model**
+## Defining Our Model
 
 The first step in defining our Entity Data Model is to setup our entity classes. These classes are just regular classes or POCOs (Plain Old CLR Objects).
 
 Here’s a list of the classes that we are going to setup with a brief description for each:
 
--   DailyTarget – Represents the user’s daily calorie target
--   FoodItem – Represents a food item that a user has consumed
--   LogEntry – Represents a log entry for a specific user
--   LogEntryFoodItem – Represents a log entry food item
--   MealType – Represents a meal type (i.e. breakfast, lunch, dinner, etc.)
--   User – Represents a user in our application
--   UserWeight – Represents a user’s weight at a given point in time (typically daily)
+* DailyTarget – Represents the user’s daily calorie target
+* FoodItem – Represents a food item that a user has consumed
+* LogEntry – Represents a log entry for a specific user
+* LogEntryFoodItem – Represents a log entry food item
+* MealType – Represents a meal type (i.e. breakfast, lunch, dinner, etc.)
+* User – Represents a user in our application
+* UserWeight – Represents a user’s weight at a given point in time (typically daily)
 
 Using the Solution Explorer, add a class for each to the CalorieCounter.Data project’s “Entities” folder. Here’s the code for each of the classes:
 
-```
+{% highlight c# %}
 public class DailyTarget
 {
     public int DailyTargetID { get; set; }
@@ -149,9 +149,9 @@ public class UserWeight
 
     public User User { get; set; }
 }
-```
+{% endhighlight %}
 
-**The Context and Repository Classes**
+## The Context and Repository Classes
 
 The entity classes on their own are not enough for Entity Framework Code First to create our model and database. In order to communicate our intentions to Entity Framework, we’ll setup a Context class that inherits from DbContext (a new and improved version of Entity Framework’s ObjectContext class). The Context class will contain a DbSet property for each entity that we intend to run queries against.
 
@@ -159,7 +159,7 @@ We’ll also setup a Repository class which will contain all of our queries. For
 
 Using the Solution Explorer, add the Context and Repository classes to the CalorieCounter.Data project’s root folder. Here’s the code for each of these classes:
 
-```
+{% highlight c# %}
 internal class Context : DbContext
 {
     public DbSet<DailyTarget> DailyTargets { get; set; }
@@ -196,17 +196,17 @@ public class Repository : IDisposable
         _context.Dispose();
     }
 }
-```
+{% endhighlight %}
 
 Here’s an updated look at your Solution:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/12091319097.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319097.png)
 
-**Generating the Database**
+## Generating the Database
 
 With the entity, context, and repository classes in place, we are ready to generate the database. To do so, we need to add a little bit of code to the CalorieCounter.TestRunner Program.cs file:
 
-```
+{% highlight c# %}
 class Program
 {
     static void Main(string[] args)
@@ -220,7 +220,7 @@ class Program
         Console.Read();
     }
 }
-```
+{% endhighlight %}
 
 We just instantiate a Repository object, call the `GetUsers()` method, and write each user’s ID and the number of users to the console. Make sure that the CalorieCounter.TestRunner is the startup project (from the Solution Explorer, right click on the CalorieCounter.TestRunner project and select “Set as StartUp Project”) and press F5 to debug the application.
 
@@ -236,7 +236,7 @@ By default, Code First will create a database in the SQL Server Express instance
 
 While the design of the database is far from perfect (we’ll fix those issues in a minute), the database itself is fully functional and ready to be used. To prove this point, let’s update the Program class add two users prior to retrieving and outputting the list of users:
 
-```
+{% highlight c# %}
 class Program
 {
     static void Main(string[] args)
@@ -264,7 +264,7 @@ class Program
         Console.Read();
     }
 }
-```
+{% endhighlight %}
 
 Now, rerun the application by pressing F5. Here’s what you should see:
 
@@ -274,11 +274,11 @@ Here’s what the Users data looks like from within SSMS:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/120914160911.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160911.png)
 
-**Overriding the Database Name and Location Defaults**
+## Overriding the Database Name and Location Defaults
 
 Let’s start the database refinement process by overriding the Code First defaults for the database name and location. We’ll accomplish that by adding a connection string to the console application’s App.config file. Here’s what the App.config file should look like:
 
-```
+{% highlight xml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup>
@@ -288,13 +288,13 @@ Let’s start the database refinement process by overriding the Code First defau
         <add name="Context" providerName="System.Data.SqlClient" connectionString="Server=.\SQLEXPRESS;Database=CalorieCounter;Trusted_Connection=true"/>
     </connectionStrings>
 </configuration>
-```
+{% endhighlight %}
 
 I’ve specified SQLEXPRESS as the database instance name (this could be the name of any SQL Server instance that exists in your development environment) and the database name as “CalorieCounter”. Now, rerun the application by pressing F5. Once the console application successfully runs, you’ll have a new instance of the database, named “CalorieCounter”, located within the instance that you specified in the connection string.
 
 Notice that we didn’t have to tell Entity Framework what connection to use. This was possible because we gave our connection string the same name as our context class, “Context”. Alternatively, we could update our Context class to explicitly specify the name of the connection string to use by adding a call into the DbContext’s constructor, like this:
 
-```
+{% highlight c# %}
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -308,7 +308,7 @@ internal class Context : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<UserWeight> UserWeights { get; set; }
 }
-```
+{% endhighlight %}
 
 If we rerun the application, we’ll see this exception:
 
@@ -318,13 +318,13 @@ This occurred because Entity Framework was expecting to find a connection string
 
 Before continuing with our database refinement process, let’s do one small bit of house cleaning. When we used NuGet to add an Entity Framework reference to the CalorieCounter.Data Class Library project, it added an App.config file that isn’t being used. Go ahead and delete the App.config file that is located in the CalorieCounter.Data project’s root.
 
-**Refining the Data Model**
+## Refining the Data Model
 
 Now let’s turn our attention to refining the database tables themselves. Entity Framework accurately identified all of the necessary tables for our database as well as the primary keys for each. This was possible because we defined a property within each class that followed the naming convention of {ClassName}ID (we also could have just simply named our properties “ID”, but I prefer the more verbose approach).
 
 Entity Framework arrived at the names of the tables by pluralizing the class names using the PluralizationService class (System.Data.Entity.Design.PluralizationServices.PluralizationService). You can disable this behavior by overriding the `OnModelCreating()` method in the DbContext class and removing the PluralizingTableNameConvention from the DbModelBuilder’s Conventions collection, like this:
 
-```
+{% highlight c# %}
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -343,17 +343,17 @@ internal class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-```
+{% endhighlight %}
 
 Now, rerun the application by pressing F5, and Entity Framework says… “Not so fast, my friend!”
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/120914160913.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160913.png)\
 
-**Dropping and Recreating the Database**
+## Dropping and Recreating the Database
 
 By default, Entity Framework will not drop and recreate your database when you make changes to code that affects the generation of the model. Not accidentally deleting your database is generally a good thing; though in our case, we really do want to drop and recreate the database. To specify this, we add a call to the `Database.SetInitializer()` method, in the constructor of our Repository class:
 
-```
+{% highlight c# %}
 public class Repository : IDisposable
 {
     private Context _context;
@@ -384,11 +384,11 @@ public class Repository : IDisposable
         _context.Dispose();
     }
 }
-```
+{% endhighlight %}
 
 Notice that I also update the constructor with a default parameter that allows the caller to specify if the database should be dropped and created when the model changes. Because I defaulted the parameter to “false”, we need to update the Program class to pass “true” in, like this:
 
-```
+{% highlight c# %}
 class Program
 {
     static void Main(string[] args)
@@ -416,19 +416,19 @@ class Program
         Console.Read();
     }
 }
-```
+{% endhighlight %}
 
 Now, rerun the application by pressing F5, and your database will be dropped and recreated, this time using the singular form of your entity class names for the table names:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/120914160914.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160914.png)
 
-**Overriding Column Conventions**
+## Overriding Column Conventions
 
 We’re almost there! Entity Framework Code First does a reasonable job of mapping .NET data types to SQL Server data types, but for string and decimal properties, some specificity is required. For string properties, the model builder will default to using a nullable nvarchar(max) column. For decimal properties, the model builder will default to using a decimal(18,2) column. To refine the data types, we’ll use the DbModelBuilder’s `Entity{EntityType}()` method, which registers an entity as part of the model and returns an object that exposes a fluent API that allows us to configure the entity. Specifically, we’ll use the `HasMaxLength()` and `IsRequired()` methods to specify the length and nullability for the string properties, and the `HasPrecision()` method to specify the precision and scale for the decimal properties.
 
 Here’s the updated Context class with the all of the necessary model refinements:
 
-```
+{% highlight c# %}
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -465,9 +465,9 @@ internal class Context : DbContext
         userWeight.Property(uw => uw.Weight).HasPrecision(4, 1);
     }
 }
-```
+{% endhighlight %}
 
-**Relationships**
+## Relationships
 
 Code First had no difficulty correctly setting up the necessary database columns and foreign keys for our entity relationships. This was due to the fact that our entity classes closely followed all of the necessary conventions for “many-to-one” relationships, including setting up foreign key and navigation properties for the “one” side of the relationships and collection properties for the “many” side of the relationships. While specifying both foreign key and navigation properties is not strictly necessary, the foreign key property gives us a convenient way to specify whether or not the relationship is required or not (by the nullability of the entity property itself). Code First can handle “many-to-many” and “one-to-one” relationships as well, but our model currently does not require either.
 
@@ -475,7 +475,7 @@ Here’s a diagram of our completed database:
 
 [![](http://csgsitestorage.blob.core.windows.net/picture/120914160915.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160915.png)
 
-**Next Steps**
+## Next Steps
 
 Our first pass at the database model has shaped up nicely. It’s far from perfect though. Food items should be composable (i.e. a food item can be made up from a collection of other food items) and meal types would probably work best as an enumeration. It would also be great to seed our database with some test data. Finally, we have work to do on our Repository, which is woefully incomplete at this point and not very testable. Future blog posts will address all of these shortcomings (and more).
 

@@ -1,19 +1,34 @@
 
 TODO
 
+
+
+DONE Fix line wrapping in posts
+
+DONE Fix headings in posts
+
+DONE Fix lists in posts
+
+DONE Add updated code highlighting
+
 Finish downloading images and updating all image references
     Add captions
     Center
 
-Add updated code highlighting
 
-Fix line wrapping in posts
+
+
+
 
 Update the "About" page
 
+Add photo
+
 Move the HTML pages into subfolders in order to have path approach to URLs
 
-Add photo
+Remove sample posts
+
+Remove sample images
 
 Adjust color scheme
 
@@ -22,6 +37,25 @@ Update README file
 Finish writing Surface comparison post
 
 
+## Previewing Changes
+
+To preview changes to the blog locally before publishing, run the following command:
+
+```
+bundle exec jekyll serve
+```
+
+## Blog Ideas
+
+1. Write up opinion/advice on how to improve your development skills
+1. Write up TS Meetup Editor Shootout summary
+1. Write up blog with overview of the year in TypeScript
+
+## Reference
+
+[Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
+
+## Theme
 
 Jekyll Clean Dark
 ============
@@ -43,6 +77,11 @@ Optionally you can use:
  - Blog tags.
 
 All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. It uses font-awesome, so you can have any icon you want to any social profile. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. And you can easily add more by adding new style in `theme.css` and setting it in `_config.yml`.
+
+Code Highlighting
+==
+
+For code syntax coloration I'm using Darcula theme from Intellij IDEA, which I've found in this post [Darcula theme for Pygments](http://smasue.github.io/pygments-darcula/).
 
 Installation
 ==
