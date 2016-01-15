@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jumpstart Development with Entity Framework Code First"
+title: "Jumpstart Development with Entity Framework Code First "
 date: 2012-10-04 16:00:00 -0800
 tags: [Entity Framework, .NET, Database]
 comments: true
