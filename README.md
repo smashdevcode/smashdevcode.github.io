@@ -36,6 +36,8 @@ Update README file
 
 Finish writing Surface comparison post
 
+Finish writing the GitHub Pages debugging post
+
 
 ## Previewing Changes
 
