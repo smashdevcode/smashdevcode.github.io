@@ -3,6 +3,8 @@
 name: SmashDev
 description: Software Developer / .NET Teacher at Treehouse
 
+timezone: America/Los_Angeles
+
 # Url is currently only used only for the RSS feed in feed.xml
 url: http://smashdev.com
 # url: http://localhost:4000

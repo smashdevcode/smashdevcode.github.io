@@ -6,6 +6,8 @@ tags: [Entity Framework, .NET, Database]
 comments: true
 ---
 
+_If you are unfamiliar with Entity Framework Code First work flows, please see my previous blog post: [Jumpstart Development with Entity Framework Code First.]({% post_url 2012-10-04-Jumpstart-Development-with-Entity-Framework-Code-First %})_
+
 When Code First was initially released as part of Entity Framework 4.1, it lacked built-in support for migrating data when making changes to your Data Model. Updating your Data Model meant that you had to drop and recreate your database. While this approach worked for new projects, it wasn’t a reasonable solution for projects that had been released into production.
 
 Code First Migrations, introduced as part of Entity Framework 4.3.1 (released on February 29, 2012), is Microsoft’s solution to that problem. Just like how Code First allows us to express our Data Model in code, Code First Migrations allows us to express our data migrations… in code. Each migration is represented by a class that inherits from the DbMigration abstract base class (part of the `System.Data.Entity.Migrations` namespace). Because of this, a history of your project’s data migrations will naturally be included as part of your project and therefore stored in source control. Additionally, Code First Migrations allow you to review how changes to your model will affect your database, before they are applied.
