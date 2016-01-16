@@ -61,8 +61,8 @@ public class Order
     {
         var sb = new StringBuilder();
 
-        sb.AppendFormat("OrderID: {0}\n", this.OrderID);
-        sb.AppendFormat("OrderedOn: {0}\n", this.OrderedOn);
+        sb.AppendFormat("OrderID: {0}", this.OrderID);
+        sb.AppendFormat("OrderedOn: {0}", this.OrderedOn);
 
         foreach (var orderItem in Items)
             sb.AppendFormat("OrderItemID: {0}, ItemNumber: {1}, Quantity: {2}, Price: {3:c2}\n",
@@ -263,8 +263,8 @@ public class Order
     {
         var sb = new StringBuilder();
 
-        sb.AppendFormat("OrderID: {0}\n", this.OrderID);
-        sb.AppendFormat("OrderedOn: {0}\n", this.OrderedOn);
+        sb.AppendFormat("OrderID: {0}", this.OrderID);
+        sb.AppendFormat("OrderedOn: {0}", this.OrderedOn);
 
         foreach (var orderItem in Items)
             sb.AppendFormat("OrderItemID: {0}, ItemNumber: {1}, Quantity: {2}, Price: {3:c2}\n",
