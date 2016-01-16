@@ -28,7 +28,7 @@ Our Data Model will initially only contain two entities: Order and OrderItem. To
 
 Here’s the updated contents of the Program.cs file:
 
-{% highlight c# %}
+```
 public class Program
 {
     public static void Main(string[] args)
@@ -93,7 +93,7 @@ public class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-{% endhighlight %}
+```
 
 ## Enabling Migrations
 
@@ -103,7 +103,7 @@ To enable Code First Migrations, open the Package Manager Console and execute th
 
 Within the Migrations folder you’ll find a Configuration class, whose `Seed()` method will allow us to add some test data to the database. Update the `Seed()` method to this:
 
-{% highlight c# %}
+```
 protected override void Seed(CodeFirstMigrations.Context context)
 {
     var order1 = new Order()
@@ -145,7 +145,7 @@ protected override void Seed(CodeFirstMigrations.Context context)
     context.Orders.AddOrUpdate(order1);
     context.Orders.AddOrUpdate(order2);
 }
-{% endhighlight %}
+```
 
 Notice that we are explicitly setting the ID values for each of the entity instances. Doing so will allow the Context’s `AddOrUpdate()` extension method to successfully determine if the record already exists in the database or not. The Context’s `SaveChanges()` method will be called on our behalf, so there’s no need for us to call it directly.
 
@@ -159,7 +159,7 @@ This command adds a class, named “Initial”, to the Migrations folder. The fi
 
 Here’s the contents of the class:
 
-{% highlight c# %}
+```
 public partial class Initial : DbMigration
 {
     public override void Up()
@@ -196,7 +196,7 @@ public partial class Initial : DbMigration
         DropTable("dbo.Order");
     }
 }
-{% endhighlight %}
+```
 
 For the most part, Code First Migrations will do a reasonable job of scaffolding the `Up()` and `Down()` methods, though some modifications will be necessary from time to time. For this migration, we needed to update the OrderItem.ItemNumber column definition to include “nullable” and “maxLength” arguments.
 
@@ -224,7 +224,7 @@ Let’s make a change to the model. Storing the item number as a string in the O
 
 Here’s the updated Program.cs file:
 
-{% highlight c# %}
+```
 public class Program
 {
     public static void Main(string[] args)
@@ -296,11 +296,11 @@ public class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-{% endhighlight %}
+```
 
 The Configuration class `Seed()` method will also need to be updated.
 
-{% highlight c# %}
+```
 protected override void Seed(CodeFirstMigrations.Context context)
 {
     var item1 = new Item() { ItemID = 1, ItemNumber = "Item1" };
@@ -345,7 +345,7 @@ protected override void Seed(CodeFirstMigrations.Context context)
     context.Orders.AddOrUpdate(order1);
     context.Orders.AddOrUpdate(order2);
 }
-{% endhighlight %}
+```
 
 Now we are ready to scaffold the migration. To do so, we execute the “Add-Migration” command again using the Package Manager Console, this time using the name “AddItemTable”.
 
@@ -370,7 +370,7 @@ We’ll need to make some modifications to this migration in order to for it to 
 
 Here’s the updated contents of the migration class:
 
-{% highlight c# %}
+```
 public partial class AddItemTable : DbMigration
 {
     public override void Up()
@@ -427,7 +427,7 @@ public partial class AddItemTable : DbMigration
         DropTable("dbo.Item");
     }
 }
-{% endhighlight %}
+```
 
 ## Updating the Database
 
@@ -455,9 +455,9 @@ With the “AddItemTable” migration successfully reverted, our database is now
 
 When it comes time to deploy your application into production, you have a couple of options for handling your Code First Migrations. First, you can set a database initializer so that all pending migrations are applied when the application starts up. For our Console Application, we just need to add the following line of code to the beginning of the `Program.Main()` method:
 
-{% highlight c# %}
+```
 Database.SetInitializer(new MigrateDatabaseToLatestVersion<Context, CodeFirstMigrations.Migrations.Configuration>());
-{% endhighlight %}
+```
 
 Code First Migrations also allows you to generate a SQL script for the pending migrations. Just include the “-Script” parameter switch when executing the “Update-Database” Package Manager Console command, and Code First Migrations will generate and display a SQL script in Visual Studio. From there you can review the script, save it to disk, deliver it to your DBA, or execute it yourself against the production database.
 
