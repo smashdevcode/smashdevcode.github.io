@@ -50,6 +50,7 @@ bundle exec jekyll serve
 1. Write up opinion/advice on how to improve your development skills
 1. Write up TS Meetup Editor Shootout summary
 1. Write up blog with overview of the year in TypeScript
+1. Write up blog with steps to migrate a DB to Azure
 
 ## Reference
 
