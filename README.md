@@ -3,6 +3,16 @@ TODO
 
 
 
+
+
+Update the "About" page
+
+Add photo
+
+
+
+
+
 DONE Fix line wrapping in posts
 
 DONE Fix headings in posts
@@ -19,10 +29,6 @@ Finish downloading images and updating all image references
 
 
 
-
-Update the "About" page
-
-Add photo
 
 Move the HTML pages into subfolders in order to have path approach to URLs
 

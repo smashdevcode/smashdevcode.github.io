@@ -1,0 +1,22 @@
+---
+---
+
+.sidebar-about {
+    padding-bottom: 10px;
+
+    img {
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+.sidebar {
+    .social-media {
+        padding: 0;
+        margin: 0;
+
+        li > a {
+            height: 25px;
+        }
+    }
+}
