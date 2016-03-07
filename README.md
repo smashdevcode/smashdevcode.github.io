@@ -1,25 +1,16 @@
 
 TODO
 
-
-
-
-
-Update the "About" page
-
-Add photo
-
-
-
-
-
 DONE Fix line wrapping in posts
-
 DONE Fix headings in posts
-
 DONE Fix lists in posts
-
 DONE Add updated code highlighting
+DONE Add photo
+DONE Update the "About" page
+DONE Mark in progress posts as "draft"
+
+
+
 
 Finish downloading images and updating all image references
     Add captions
@@ -27,22 +18,31 @@ Finish downloading images and updating all image references
 
 
 
+Remove sample posts
+
+Remove sample images
+
 
 
 
 Move the HTML pages into subfolders in order to have path approach to URLs
 
-Remove sample posts
-
-Remove sample images
-
 Adjust color scheme
 
 Update README file
 
+Add "Schedule" page
+
+
+
+
 Finish writing Surface comparison post
 
 Finish writing the GitHub Pages debugging post
+    Test if the date in the post front matter makes a difference with this issue
+    I don't think that it does... I think it's the date in the name of the file
+
+
 
 
 ## Previewing Changes
@@ -59,6 +59,7 @@ bundle exec jekyll serve
 1. Write up TS Meetup Editor Shootout summary
 1. Write up blog with overview of the year in TypeScript
 1. Write up blog with steps to migrate a DB to Azure
+1. Write up review of the View-Master Virtual Reality Starter Pack
 
 ## Reference
 
@@ -66,56 +67,45 @@ bundle exec jekyll serve
 
 ## Theme
 
-Jekyll Clean Dark
-============
+### Dark version of jekyll-clean theme
 
-This theme was created on top of Jekyll Clean theme by Scotte, you can view the originnal version in action [on his blog](https://scotte.github.io).
+This theme was created on top of Jekyll Clean theme by Scotte, you can view the original version in action [on his blog](https://scotte.github.io).
 
 * Get it from [github](https://github.com/streetturtle/jekyll-clean-dark).
 * See the [live demo](http://pavelmakhov.com/jekyll-clean-dark).
 * See it [in action on my own blog](http://pavelmakhov.com).
 
-This theme uses some parts of Twitter Bootstrap, which allows it to look nice on a mobile devices using a collapsable nav bar and hiding the
-sidebar.
+This theme uses some parts of Twitter Bootstrap, which allows it to look nice on a mobile devices using a collapsable nav bar and hiding the sidebar.
 
 Optionally you can use:
 
- - [Disqus](http://disqus.com) as a comments system;
- - [Google Analytics](http://www.google.com/analytics/);
- - [Yandex Metrika](http://metrica.yandex.com);
- - Blog tags.
+* [Disqus](http://disqus.com) as a comments system;
+* [Google Analyticse](http://www.google.com/analytics/);
+* [Yandex Metrika](http://metrica.yandex.com);
+* Blog tags.
 
-All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. It uses font-awesome, so you can have any icon you want to any social profile. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. And you can easily add more by adding new style in `theme.css` and setting it in `_config.yml`.
-
-Code Highlighting
-==
-
-For code syntax coloration I'm using Darcula theme from Intellij IDEA, which I've found in this post [Darcula theme for Pygments](http://smasue.github.io/pygments-darcula/).
+All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social accounts. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. You can easily add more by putting svg images in a /css/social folder.
 
 Installation
 ==
 
-If you dont't have your own blog you can clone this repository and put your articles in a `_posts` folder.
-If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.
+If you don't have your own blog you can clone this repository and put your articles in a `_posts` folder. If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.
 
 After you will have to set up your `_config.yml`
 
 License
 =======
 
-The content of this theme is distributed and licensed under a
-[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+The content of this theme is distributed and licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
     This license lets others distribute, remix, tweak, and build upon your work,
     even commercially, as long as they credit you for the original creation. This
     is the most accommodating of licenses offered. Recommended for maximum
     dissemination and use of licensed materials.
 
-In other words: you can do anything you want with this theme on any site, just please
-provide a link to the original theme on github.
+In other words: you can do anything you want with this theme on any site, just please provide a link to the original theme on github.
 
-This theme includes the following files which are the properties of their
-respective owners:
+This theme includes the following files which are the properties of their respective owners:
 
 * js/bootstrap.min.js - [bootstrap](http://getbootstrap.com)
 * css/bootstrap.min.css - [bootstrap](http://getbootstrap.com)
