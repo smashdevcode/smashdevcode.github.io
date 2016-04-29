@@ -99,7 +99,7 @@ public class Context : DbContext
 
 To enable Code First Migrations, open the Package Manager Console and execute the “Enable-Migrations” at the command prompt. This command will add a “Migrations” folder to your project. Enabling migrations only needs to be done once.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819103.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819103.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/enable-migrations.png){: .center-image }
 
 Within the Migrations folder you’ll find a Configuration class, whose `Seed()` method will allow us to add some test data to the database. Update the `Seed()` method to this:
 
@@ -153,7 +153,7 @@ Notice that we are explicitly setting the ID values for each of the entity insta
 
 Now we’re ready to create the initial migration. To do so, we’ll use the Package Manager Console again, this time executing the “Add-Migration” command along with the name of the migration, “Initial”.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819104.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819104.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/create-initial-migration.png){: .center-image }
 
 This command adds a class, named “Initial”, to the Migrations folder. The file name will be prefixed with a timestamp, ensuring that the migration classes will display in the correct chronological order. The class itself contains `Up()` and `Down()` methods: the `Up()` method contains the migration code for upgrading the database to this version of the model, while the `Down()` method contains the migration code for downgrading to the prior version.
 
@@ -204,19 +204,19 @@ For the most part, Code First Migrations will do a reasonable job of scaffolding
 
 Now we are ready to update the database, using the third and final Code First Migrations Package Manager Console command, “Update-Database”.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819105.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819105.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/update-database.png){: .center-image }
 
 Notice that our Initial migration was applied and the `Seed()` method was ran. Here’s what our database tables look like from within SQL Server Management Studio:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819106.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819106.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/ssms-initial.png){: .center-image }
 
 Code First Migrations uses the “\_\_MigrationHistory” system table to keep track of the database version. Currently, we only have a single row in the table:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819107.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819107.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/migration-history-table-initial.png){: .center-image }
 
 If we run the Console Application, here’s the output:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819108.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819108.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/console-output-initial.png){: .center-image }
 
 ## Making a Model Change
 
@@ -349,7 +349,7 @@ protected override void Seed(CodeFirstMigrations.Context context)
 
 Now we are ready to scaffold the migration. To do so, we execute the “Add-Migration” command again using the Package Manager Console, this time using the name “AddItemTable”.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12101819109.png)](http://csgsitestorage.blob.core.windows.net/picture/12101819109.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/add-item-table-migration.png){: .center-image }
 
 ## Modifying the Migration
 
@@ -433,21 +433,21 @@ public partial class AddItemTable : DbMigration
 
 Now we’re ready to update the database. Simply execute the “Update-Database” command at the Package Manager Console prompt:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/121018191010.png)](http://csgsitestorage.blob.core.windows.net/picture/121018191010.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/update-database-again.png){: .center-image }
 
 Here are updated looks at the database tables, the contents of the “\_\_MigrationHistory” table, and the Console Application’s output:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/121018191011.png)](http://csgsitestorage.blob.core.windows.net/picture/121018191011.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/ssms-item-table.png){: .center-image }
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/121018191012.png)](http://csgsitestorage.blob.core.windows.net/picture/121018191012.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/migration-history-table-item-table.png){: .center-image }
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/121018191013.png)](http://csgsitestorage.blob.core.windows.net/picture/121018191013.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/console-output-item-table.png){: .center-image }
 
 ## Downgrading the Database
 
 With Code First Migrations, we can just as easily downgrade a database as we can upgrade it. To do so, just execute the “Update-Database” command while specifying the “-TargetMigration” parameter.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/121018191014.png)](http://csgsitestorage.blob.core.windows.net/picture/121018191014.png)
+![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/downgrade.png){: .center-image }
 
 With the “AddItemTable” migration successfully reverted, our database is now back at our initial state (as specified by the “Initial” migration).
 

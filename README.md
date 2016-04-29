@@ -8,30 +8,36 @@ DONE Add updated code highlighting
 DONE Add photo
 DONE Update the "About" page
 DONE Mark in progress posts as "draft"
+DONE Remove sample posts
+DONE Remove sample images
 
 
 
 
 Finish downloading images and updating all image references
     Add captions
-    Center
+    Add alt text
 
 
 
-Remove sample posts
 
-Remove sample images
-
-
-
+Fix tag pages
+  Will I have to generate the site locally and then post to GitHub pages???
+  To do this, should I create a different repo or can I have GitHub pages serve from the \_site folder???
+  http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
 
 Move the HTML pages into subfolders in order to have path approach to URLs
+
+Add "Schedule" page
+  Include upcoming and past talks
+
+
+
 
 Adjust color scheme
 
 Update README file
 
-Add "Schedule" page
 
 
 
@@ -55,6 +61,7 @@ bundle exec jekyll serve
 
 ## Blog Ideas
 
+1. Write up walkthrough of how to setup a JS project in VS Code
 1. Write up opinion/advice on how to improve your development skills
 1. Write up TS Meetup Editor Shootout summary
 1. Write up blog with overview of the year in TypeScript

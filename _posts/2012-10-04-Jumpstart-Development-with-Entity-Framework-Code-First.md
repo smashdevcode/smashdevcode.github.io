@@ -20,15 +20,15 @@ Let’s get started by setting up our Visual Studio projects. I’ll be using Vi
 
 ​1. From within Visual Studio, use the New Project dialog (select “File \> New \> Project…”) to setup a new Class Library project named “CalorieCounter.Data” with a Solution name of “CalorieCounterDataLayer”.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319091.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319091.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-class-library.png){: .center-image }
 
 ​2. Using the Solution Explorer pane, open the Add New Project dialog (right click on the CalorieCounterDataLayer solution and select “Add \> New Project…”) to setup a Console Application project named “CalorieCounter.TestRunner”.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319092.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319092.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-console-app.png){: .center-image }
 
 ​3. From within the CalorieCounter.TestRunner project in the Solution Explorer pane, open the Reference Manager dialog (right click on “References” and select “Add Reference…”) and add a reference to the CalorieCounter.Data project.
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319093.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319093.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-reference.png){: .center-image }
 
 ​4. Delete the Class1.cs file from the CalorieCounter.Data project.
 
@@ -36,17 +36,17 @@ Let’s get started by setting up our Visual Studio projects. I’ll be using Vi
 
 At this point, your Solution should look like this in the Solution Explorer:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319094.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319094.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer.png){: .center-image }
 
 ### Using NuGet to Add a Reference to Entity Framework
 
 To complete our initial project setup, we’ll use NuGet to add a reference to the Entity Framework library (see [http://nuget.org/](http://nuget.org/) for information on installing and using NuGet). Open the Manage NuGet Packages dialog (from within the Solution Explorer, right click on the CalorieCounter.Data project and select “Manage NuGet Packages…”) and select “Online” as the packages source. If you are sorting by the most downloads, Entity Framework should be near the top of the list (at the time of this writing, it’s the second most downloaded item). Select it in the list and click “Install”. You’ll be prompted to accept a license agreement, after which the package manager will add a number of references to your project (EntityFramework, System.ComponentModel.DataAnnotations, and System.Data.Entity) and two files to the root of the project (App.config and packages.config).
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319095.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319095.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-ef.png){: .center-image }
 
 Here’s an updated look at your Solution:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319096.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319096.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer-updated.png){: .center-image }
 
 ## Defining Our Model
 
@@ -200,7 +200,7 @@ public class Repository : IDisposable
 
 Here’s an updated look at your Solution:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319097.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319097.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer-with-classes.png){: .center-image }
 
 ## Generating the Database
 
@@ -226,13 +226,13 @@ We just instantiate a Repository object, call the `GetUsers()` method, and write
 
 Here’s what you should see:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319098.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319098.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/console-output.png){: .center-image }
 
 The number of users is currently “0”, which is not a surprise because we haven’t added any records to our database yet. But did the database get generated? And if so, where?
 
 By default, Code First will create a database in the SQL Server Express instance, using the fully qualified name of our Context class, CalorieCounter.Data.Context, as the database name. Here’s a look from within SQL Server Management Studio (SSMS) at the tables that were created:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/12091319099.png)](http://csgsitestorage.blob.core.windows.net/picture/12091319099.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/database-diagram.png){: .center-image }
 
 While the design of the database is far from perfect (we’ll fix those issues in a minute), the database itself is fully functional and ready to be used. To prove this point, let’s update the Program class add two users prior to retrieving and outputting the list of users:
 
@@ -268,11 +268,11 @@ class Program
 
 Now, rerun the application by pressing F5. Here’s what you should see:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120913190910.png)](http://csgsitestorage.blob.core.windows.net/picture/120913190910.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/console-output-with-users.png){: .center-image }
 
 Here’s what the Users data looks like from within SSMS:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120914160911.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160911.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/ssms-users-data.png){: .center-image }
 
 ## Overriding the Database Name and Location Defaults
 
@@ -312,7 +312,7 @@ internal class Context : DbContext
 
 If we rerun the application, we’ll see this exception:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120914160912.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160912.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/exception-connection-string.png){: .center-image }
 
 This occurred because Entity Framework was expecting to find a connection string named “CalorieCounterContext” while our connection string is still named “Context”. If we change the name of our connection string to “CalorieCounterContext” and rerun the application, the application will successfully run.
 
@@ -347,7 +347,7 @@ internal class Context : DbContext
 
 Now, rerun the application by pressing F5, and Entity Framework says… “Not so fast, my friend!”
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120914160913.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160913.png)\
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/exception-model-changed.png){: .center-image }
 
 ## Dropping and Recreating the Database
 
@@ -420,7 +420,7 @@ class Program
 
 Now, rerun the application by pressing F5, and your database will be dropped and recreated, this time using the singular form of your entity class names for the table names:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120914160914.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160914.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/ssms-table-names.png){: .center-image }
 
 ## Overriding Column Conventions
 
@@ -473,7 +473,7 @@ Code First had no difficulty correctly setting up the necessary database columns
 
 Here’s a diagram of our completed database:
 
-[![](http://csgsitestorage.blob.core.windows.net/picture/120914160915.png)](http://csgsitestorage.blob.core.windows.net/picture/120914160915.png)
+![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/database-diagram-completed.png){: .center-image }
 
 ## Next Steps
 
