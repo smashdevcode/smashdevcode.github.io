@@ -10,13 +10,7 @@ DONE Update the "About" page
 DONE Mark in progress posts as "draft"
 DONE Remove sample posts
 DONE Remove sample images
-
-
-
-
-Finish downloading images and updating all image references
-    Add captions
-    Add alt text
+DONE Finish downloading images and updating all image references
 
 
 
@@ -30,9 +24,6 @@ Move the HTML pages into subfolders in order to have path approach to URLs
 
 Add "Schedule" page
   Include upcoming and past talks
-
-
-
 
 Adjust color scheme
 

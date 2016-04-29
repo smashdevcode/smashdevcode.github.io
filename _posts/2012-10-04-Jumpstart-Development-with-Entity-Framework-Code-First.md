@@ -20,15 +20,15 @@ Let’s get started by setting up our Visual Studio projects. I’ll be using Vi
 
 ​1. From within Visual Studio, use the New Project dialog (select “File \> New \> Project…”) to setup a new Class Library project named “CalorieCounter.Data” with a Solution name of “CalorieCounterDataLayer”.
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-class-library.png){: .center-image }
+![Setup Class Library Project]({{ site.url }}/images/jumpstart-dev-ef-code-first/add-class-library.png){: .center-image }
 
 ​2. Using the Solution Explorer pane, open the Add New Project dialog (right click on the CalorieCounterDataLayer solution and select “Add \> New Project…”) to setup a Console Application project named “CalorieCounter.TestRunner”.
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-console-app.png){: .center-image }
+![Setup Console App Project]({{ site.url }}/images/jumpstart-dev-ef-code-first/add-console-app.png){: .center-image }
 
 ​3. From within the CalorieCounter.TestRunner project in the Solution Explorer pane, open the Reference Manager dialog (right click on “References” and select “Add Reference…”) and add a reference to the CalorieCounter.Data project.
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-reference.png){: .center-image }
+![Add Reference]({{ site.url }}/images/jumpstart-dev-ef-code-first/add-reference.png){: .center-image }
 
 ​4. Delete the Class1.cs file from the CalorieCounter.Data project.
 
@@ -36,17 +36,17 @@ Let’s get started by setting up our Visual Studio projects. I’ll be using Vi
 
 At this point, your Solution should look like this in the Solution Explorer:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer.png){: .center-image }
+![Solution Explorer]({{ site.url }}/images/jumpstart-dev-ef-code-first/solution-explorer.png){: .center-image }
 
 ### Using NuGet to Add a Reference to Entity Framework
 
 To complete our initial project setup, we’ll use NuGet to add a reference to the Entity Framework library (see [http://nuget.org/](http://nuget.org/) for information on installing and using NuGet). Open the Manage NuGet Packages dialog (from within the Solution Explorer, right click on the CalorieCounter.Data project and select “Manage NuGet Packages…”) and select “Online” as the packages source. If you are sorting by the most downloads, Entity Framework should be near the top of the list (at the time of this writing, it’s the second most downloaded item). Select it in the list and click “Install”. You’ll be prompted to accept a license agreement, after which the package manager will add a number of references to your project (EntityFramework, System.ComponentModel.DataAnnotations, and System.Data.Entity) and two files to the root of the project (App.config and packages.config).
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/add-ef.png){: .center-image }
+![Add Entity Framework]({{ site.url }}/images/jumpstart-dev-ef-code-first/add-ef.png){: .center-image }
 
 Here’s an updated look at your Solution:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer-updated.png){: .center-image }
+![Updated Solution]({{ site.url }}/images/jumpstart-dev-ef-code-first/solution-explorer-updated.png){: .center-image }
 
 ## Defining Our Model
 
@@ -64,7 +64,7 @@ Here’s a list of the classes that we are going to setup with a brief descripti
 
 Using the Solution Explorer, add a class for each to the CalorieCounter.Data project’s “Entities” folder. Here’s the code for each of the classes:
 
-{% highlight c# %}
+```c#
 public class DailyTarget
 {
     public int DailyTargetID { get; set; }
@@ -149,7 +149,7 @@ public class UserWeight
 
     public User User { get; set; }
 }
-{% endhighlight %}
+```
 
 ## The Context and Repository Classes
 
@@ -159,7 +159,7 @@ We’ll also setup a Repository class which will contain all of our queries. For
 
 Using the Solution Explorer, add the Context and Repository classes to the CalorieCounter.Data project’s root folder. Here’s the code for each of these classes:
 
-{% highlight c# %}
+```c#
 internal class Context : DbContext
 {
     public DbSet<DailyTarget> DailyTargets { get; set; }
@@ -196,17 +196,17 @@ public class Repository : IDisposable
         _context.Dispose();
     }
 }
-{% endhighlight %}
+```
 
 Here’s an updated look at your Solution:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/solution-explorer-with-classes.png){: .center-image }
+![Updated Solution]({{ site.url }}/images/jumpstart-dev-ef-code-first/solution-explorer-with-classes.png){: .center-image }
 
 ## Generating the Database
 
 With the entity, context, and repository classes in place, we are ready to generate the database. To do so, we need to add a little bit of code to the CalorieCounter.TestRunner Program.cs file:
 
-{% highlight c# %}
+```c#
 class Program
 {
     static void Main(string[] args)
@@ -220,23 +220,23 @@ class Program
         Console.Read();
     }
 }
-{% endhighlight %}
+```
 
 We just instantiate a Repository object, call the `GetUsers()` method, and write each user’s ID and the number of users to the console. Make sure that the CalorieCounter.TestRunner is the startup project (from the Solution Explorer, right click on the CalorieCounter.TestRunner project and select “Set as StartUp Project”) and press F5 to debug the application.
 
 Here’s what you should see:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/console-output.png){: .center-image }
+![Console Output]({{ site.url }}/images/jumpstart-dev-ef-code-first/console-output.png){: .center-image }
 
 The number of users is currently “0”, which is not a surprise because we haven’t added any records to our database yet. But did the database get generated? And if so, where?
 
 By default, Code First will create a database in the SQL Server Express instance, using the fully qualified name of our Context class, CalorieCounter.Data.Context, as the database name. Here’s a look from within SQL Server Management Studio (SSMS) at the tables that were created:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/database-diagram.png){: .center-image }
+![Database Diagram]({{ site.url }}/images/jumpstart-dev-ef-code-first/database-diagram.png){: .center-image }
 
 While the design of the database is far from perfect (we’ll fix those issues in a minute), the database itself is fully functional and ready to be used. To prove this point, let’s update the Program class add two users prior to retrieving and outputting the list of users:
 
-{% highlight c# %}
+```c#
 class Program
 {
     static void Main(string[] args)
@@ -264,21 +264,21 @@ class Program
         Console.Read();
     }
 }
-{% endhighlight %}
+```
 
 Now, rerun the application by pressing F5. Here’s what you should see:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/console-output-with-users.png){: .center-image }
+![Console Output with Users]({{ site.url }}/images/jumpstart-dev-ef-code-first/console-output-with-users.png){: .center-image }
 
 Here’s what the Users data looks like from within SSMS:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/ssms-users-data.png){: .center-image }
+![Users Data in SSMS]({{ site.url }}/images/jumpstart-dev-ef-code-first/ssms-users-data.png){: .center-image }
 
 ## Overriding the Database Name and Location Defaults
 
 Let’s start the database refinement process by overriding the Code First defaults for the database name and location. We’ll accomplish that by adding a connection string to the console application’s App.config file. Here’s what the App.config file should look like:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup>
@@ -288,13 +288,13 @@ Let’s start the database refinement process by overriding the Code First defau
         <add name="Context" providerName="System.Data.SqlClient" connectionString="Server=.\SQLEXPRESS;Database=CalorieCounter;Trusted_Connection=true"/>
     </connectionStrings>
 </configuration>
-{% endhighlight %}
+```
 
 I’ve specified SQLEXPRESS as the database instance name (this could be the name of any SQL Server instance that exists in your development environment) and the database name as “CalorieCounter”. Now, rerun the application by pressing F5. Once the console application successfully runs, you’ll have a new instance of the database, named “CalorieCounter”, located within the instance that you specified in the connection string.
 
 Notice that we didn’t have to tell Entity Framework what connection to use. This was possible because we gave our connection string the same name as our context class, “Context”. Alternatively, we could update our Context class to explicitly specify the name of the connection string to use by adding a call into the DbContext’s constructor, like this:
 
-{% highlight c# %}
+```c#
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -308,11 +308,11 @@ internal class Context : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<UserWeight> UserWeights { get; set; }
 }
-{% endhighlight %}
+```
 
 If we rerun the application, we’ll see this exception:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/exception-connection-string.png){: .center-image }
+![Exception]({{ site.url }}/images/jumpstart-dev-ef-code-first/exception-connection-string.png){: .center-image }
 
 This occurred because Entity Framework was expecting to find a connection string named “CalorieCounterContext” while our connection string is still named “Context”. If we change the name of our connection string to “CalorieCounterContext” and rerun the application, the application will successfully run.
 
@@ -324,7 +324,7 @@ Now let’s turn our attention to refining the database tables themselves. Entit
 
 Entity Framework arrived at the names of the tables by pluralizing the class names using the PluralizationService class (System.Data.Entity.Design.PluralizationServices.PluralizationService). You can disable this behavior by overriding the `OnModelCreating()` method in the DbContext class and removing the PluralizingTableNameConvention from the DbModelBuilder’s Conventions collection, like this:
 
-{% highlight c# %}
+```c#
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -343,17 +343,17 @@ internal class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-{% endhighlight %}
+```
 
 Now, rerun the application by pressing F5, and Entity Framework says… “Not so fast, my friend!”
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/exception-model-changed.png){: .center-image }
+![Exception]({{ site.url }}/images/jumpstart-dev-ef-code-first/exception-model-changed.png){: .center-image }
 
 ## Dropping and Recreating the Database
 
 By default, Entity Framework will not drop and recreate your database when you make changes to code that affects the generation of the model. Not accidentally deleting your database is generally a good thing; though in our case, we really do want to drop and recreate the database. To specify this, we add a call to the `Database.SetInitializer()` method, in the constructor of our Repository class:
 
-{% highlight c# %}
+```c#
 public class Repository : IDisposable
 {
     private Context _context;
@@ -384,11 +384,11 @@ public class Repository : IDisposable
         _context.Dispose();
     }
 }
-{% endhighlight %}
+```
 
 Notice that I also update the constructor with a default parameter that allows the caller to specify if the database should be dropped and created when the model changes. Because I defaulted the parameter to “false”, we need to update the Program class to pass “true” in, like this:
 
-{% highlight c# %}
+```c#
 class Program
 {
     static void Main(string[] args)
@@ -416,11 +416,11 @@ class Program
         Console.Read();
     }
 }
-{% endhighlight %}
+```
 
 Now, rerun the application by pressing F5, and your database will be dropped and recreated, this time using the singular form of your entity class names for the table names:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/ssms-table-names.png){: .center-image }
+![Table Names in SSMS]({{ site.url }}/images/jumpstart-dev-ef-code-first/ssms-table-names.png){: .center-image }
 
 ## Overriding Column Conventions
 
@@ -428,7 +428,7 @@ We’re almost there! Entity Framework Code First does a reasonable job of mappi
 
 Here’s the updated Context class with the all of the necessary model refinements:
 
-{% highlight c# %}
+```c#
 internal class Context : DbContext
 {
     public Context() : base("name=CalorieCounterContext")
@@ -465,7 +465,7 @@ internal class Context : DbContext
         userWeight.Property(uw => uw.Weight).HasPrecision(4, 1);
     }
 }
-{% endhighlight %}
+```
 
 ## Relationships
 
@@ -473,7 +473,7 @@ Code First had no difficulty correctly setting up the necessary database columns
 
 Here’s a diagram of our completed database:
 
-![image]({{ site.url | append:site.baseurl }}/images/jumpstart-dev-ef-code-first/database-diagram-completed.png){: .center-image }
+![Completed Database Diagram]({{ site.url }}/images/jumpstart-dev-ef-code-first/database-diagram-completed.png){: .center-image }
 
 ## Next Steps
 

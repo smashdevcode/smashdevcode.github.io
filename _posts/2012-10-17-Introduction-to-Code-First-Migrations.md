@@ -18,17 +18,17 @@ Let’s roll up our sleeves and see Code First Migrations in action.
 
 We’ll start by creating a new Console Application project. I’ll be using Visual Studio 2012 (Visual Studio 2010 will also work if you haven’t upgraded yet). From within Visual Studio, use the New Project dialog (select “File \> New \> Project…”) to setup a new Console Application project named “CodeFirstMigrations”.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/new-project.png){: .center-image }
+![Setup Console App Project]({{ site.url }}/images/intro-data-migrations/new-project.png){: .center-image }
 
 Now let’s add a reference to Entity Framework using the Package Manager Console (Tools \> Library Package Manager \> Package Manager Console). From the Package Manager Console command prompt, execute the command “Install-Package EntityFramework”.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/install-package.png){: .center-image }
+![Install Entity Framework]({{ site.url }}/images/intro-data-migrations/install-package.png){: .center-image }
 
 Our Data Model will initially only contain two entities: Order and OrderItem. To keep things simple, let’s just add our entity and Context classes directly within the Program.cs file. We’ll also update the `Program.Main()` static method to instantiate an instance of our Context class, retrieve a list of Orders, and write that list to the Console. Notice that we are overriding the `ToString()` method on the Order entity class in order to pretty print order details to the Console.
 
 Here’s the updated contents of the Program.cs file:
 
-{% highlight c# %}
+```c#
 public class Program
 {
     public static void Main(string[] args)
@@ -93,17 +93,17 @@ public class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-{% endhighlight %}
+```
 
 ## Enabling Migrations
 
 To enable Code First Migrations, open the Package Manager Console and execute the “Enable-Migrations” at the command prompt. This command will add a “Migrations” folder to your project. Enabling migrations only needs to be done once.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/enable-migrations.png){: .center-image }
+![Enable Migrations]({{ site.url }}/images/intro-data-migrations/enable-migrations.png){: .center-image }
 
 Within the Migrations folder you’ll find a Configuration class, whose `Seed()` method will allow us to add some test data to the database. Update the `Seed()` method to this:
 
-{% highlight c# %}
+```c#
 protected override void Seed(CodeFirstMigrations.Context context)
 {
     var order1 = new Order()
@@ -145,7 +145,7 @@ protected override void Seed(CodeFirstMigrations.Context context)
     context.Orders.AddOrUpdate(order1);
     context.Orders.AddOrUpdate(order2);
 }
-{% endhighlight %}
+```
 
 Notice that we are explicitly setting the ID values for each of the entity instances. Doing so will allow the Context’s `AddOrUpdate()` extension method to successfully determine if the record already exists in the database or not. The Context’s `SaveChanges()` method will be called on our behalf, so there’s no need for us to call it directly.
 
@@ -153,13 +153,13 @@ Notice that we are explicitly setting the ID values for each of the entity insta
 
 Now we’re ready to create the initial migration. To do so, we’ll use the Package Manager Console again, this time executing the “Add-Migration” command along with the name of the migration, “Initial”.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/create-initial-migration.png){: .center-image }
+![Create Initial Migration]({{ site.url }}/images/intro-data-migrations/create-initial-migration.png){: .center-image }
 
 This command adds a class, named “Initial”, to the Migrations folder. The file name will be prefixed with a timestamp, ensuring that the migration classes will display in the correct chronological order. The class itself contains `Up()` and `Down()` methods: the `Up()` method contains the migration code for upgrading the database to this version of the model, while the `Down()` method contains the migration code for downgrading to the prior version.
 
 Here’s the contents of the class:
 
-{% highlight c# %}
+```c#
 public partial class Initial : DbMigration
 {
     public override void Up()
@@ -196,7 +196,7 @@ public partial class Initial : DbMigration
         DropTable("dbo.Order");
     }
 }
-{% endhighlight %}
+```
 
 For the most part, Code First Migrations will do a reasonable job of scaffolding the `Up()` and `Down()` methods, though some modifications will be necessary from time to time. For this migration, we needed to update the OrderItem.ItemNumber column definition to include “nullable” and “maxLength” arguments.
 
@@ -204,19 +204,19 @@ For the most part, Code First Migrations will do a reasonable job of scaffolding
 
 Now we are ready to update the database, using the third and final Code First Migrations Package Manager Console command, “Update-Database”.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/update-database.png){: .center-image }
+![Update Database]({{ site.url }}/images/intro-data-migrations/update-database.png){: .center-image }
 
 Notice that our Initial migration was applied and the `Seed()` method was ran. Here’s what our database tables look like from within SQL Server Management Studio:
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/ssms-initial.png){: .center-image }
+![Initial Database in SSMS]({{ site.url }}/images/intro-data-migrations/ssms-initial.png){: .center-image }
 
 Code First Migrations uses the “\_\_MigrationHistory” system table to keep track of the database version. Currently, we only have a single row in the table:
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/migration-history-table-initial.png){: .center-image }
+![Initial Migration History Table Contents]({{ site.url }}/images/intro-data-migrations/migration-history-table-initial.png){: .center-image }
 
 If we run the Console Application, here’s the output:
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/console-output-initial.png){: .center-image }
+![Initial Console Output]({{ site.url }}/images/intro-data-migrations/console-output-initial.png){: .center-image }
 
 ## Making a Model Change
 
@@ -224,7 +224,7 @@ Let’s make a change to the model. Storing the item number as a string in the O
 
 Here’s the updated Program.cs file:
 
-{% highlight c# %}
+```c#
 public class Program
 {
     public static void Main(string[] args)
@@ -296,11 +296,11 @@ public class Context : DbContext
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
     }
 }
-{% endhighlight %}
+```
 
 The Configuration class `Seed()` method will also need to be updated.
 
-{% highlight c# %}
+```c#
 protected override void Seed(CodeFirstMigrations.Context context)
 {
     var item1 = new Item() { ItemID = 1, ItemNumber = "Item1" };
@@ -345,11 +345,11 @@ protected override void Seed(CodeFirstMigrations.Context context)
     context.Orders.AddOrUpdate(order1);
     context.Orders.AddOrUpdate(order2);
 }
-{% endhighlight %}
+```
 
 Now we are ready to scaffold the migration. To do so, we execute the “Add-Migration” command again using the Package Manager Console, this time using the name “AddItemTable”.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/add-item-table-migration.png){: .center-image }
+![Add Item Table Migration]({{ site.url }}/images/intro-data-migrations/add-item-table-migration.png){: .center-image }
 
 ## Modifying the Migration
 
@@ -370,7 +370,7 @@ We’ll need to make some modifications to this migration in order to for it to 
 
 Here’s the updated contents of the migration class:
 
-{% highlight c# %}
+```c#
 public partial class AddItemTable : DbMigration
 {
     public override void Up()
@@ -427,27 +427,27 @@ public partial class AddItemTable : DbMigration
         DropTable("dbo.Item");
     }
 }
-{% endhighlight %}
+```
 
 ## Updating the Database
 
 Now we’re ready to update the database. Simply execute the “Update-Database” command at the Package Manager Console prompt:
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/update-database-again.png){: .center-image }
+![Update Database]({{ site.url }}/images/intro-data-migrations/update-database-again.png){: .center-image }
 
 Here are updated looks at the database tables, the contents of the “\_\_MigrationHistory” table, and the Console Application’s output:
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/ssms-item-table.png){: .center-image }
+![Item Table in SSMS]({{ site.url }}/images/intro-data-migrations/ssms-item-table.png){: .center-image }
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/migration-history-table-item-table.png){: .center-image }
+![Migration History Table Contents After Adding Item Table]({{ site.url }}/images/intro-data-migrations/migration-history-table-item-table.png){: .center-image }
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/console-output-item-table.png){: .center-image }
+![Console Output with Item Table]({{ site.url }}/images/intro-data-migrations/console-output-item-table.png){: .center-image }
 
 ## Downgrading the Database
 
 With Code First Migrations, we can just as easily downgrade a database as we can upgrade it. To do so, just execute the “Update-Database” command while specifying the “-TargetMigration” parameter.
 
-![image]({{ site.url | append:site.baseurl }}/images/intro-data-migrations/downgrade.png){: .center-image }
+![Downgrade Database]({{ site.url }}/images/intro-data-migrations/downgrade.png){: .center-image }
 
 With the “AddItemTable” migration successfully reverted, our database is now back at our initial state (as specified by the “Initial” migration).
 
@@ -455,9 +455,9 @@ With the “AddItemTable” migration successfully reverted, our database is now
 
 When it comes time to deploy your application into production, you have a couple of options for handling your Code First Migrations. First, you can set a database initializer so that all pending migrations are applied when the application starts up. For our Console Application, we just need to add the following line of code to the beginning of the `Program.Main()` method:
 
-{% highlight c# %}
+```c#
 Database.SetInitializer(new MigrateDatabaseToLatestVersion<Context, CodeFirstMigrations.Migrations.Configuration>());
-{% endhighlight %}
+```
 
 Code First Migrations also allows you to generate a SQL script for the pending migrations. Just include the “-Script” parameter switch when executing the “Update-Database” Package Manager Console command, and Code First Migrations will generate and display a SQL script in Visual Studio. From there you can review the script, save it to disk, deliver it to your DBA, or execute it yourself against the production database.
 
