@@ -11,6 +11,8 @@ DONE Mark in progress posts as "draft"
 DONE Remove sample posts
 DONE Remove sample images
 DONE Finish downloading images and updating all image references
+DONE Add "Schedule" page
+
 
 
 
@@ -18,12 +20,17 @@ DONE Finish downloading images and updating all image references
 Fix tag pages
   Will I have to generate the site locally and then post to GitHub pages???
   To do this, should I create a different repo or can I have GitHub pages serve from the \_site folder???
+
   http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
+  http://www.minddust.com/post/tags-and-categories-on-github-pages/
 
-Move the HTML pages into subfolders in order to have path approach to URLs
 
-Add "Schedule" page
-  Include upcoming and past talks
+
+  http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/
+
+
+
+
 
 Adjust color scheme
 
