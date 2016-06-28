@@ -7,14 +7,6 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 06/19-21 NodePDX Conference
-
-**Demystifying TypeScript Decorators**
-
-TypeScript decorators, based on the ES2016 decorator proposal and introduced as part of TypeScript 1.5, provide developers with a way to modify a JavaScript class, property, method, or method parameter using a convenient declarative syntax. We'll start this session by creating our own decorator, to see firsthand how they work. Then, we'll take a look at how decorators can be used in a variety of settings.
-
-[http://lanyrd.com/2016/nodepdx/sfchfg/](http://lanyrd.com/2016/nodepdx/sfchfg/)
-
 ### 06/28 Portland TypeScript Meetup
 
 **Working with TypeScript Definitions**
@@ -57,7 +49,27 @@ In this talk, we'll review the development history of ASP.NET Core, set up our d
 
 [http://www.meetup.com/PADNUG/events/229163115/](http://www.meetup.com/PADNUG/events/229163115/)
 
+### 09/16 2016 UtahJS Conference
+
+**Reactive Programming with RxJS**
+
+RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we'll create some simple examples to explore what Observables are and how to use them. Along the way, we'll compare and contrast Observables to the other familiar tools in our JavaScript developer's toolbox: event listeners, callbacks, and promises. We'll also look at an Angular 2 example, which favors using Observables over promises.
+
+[https://conf.utahjs.com/](https://conf.utahjs.com/)
+
 ## Past Presentations/Talks
+
+### 06/19-21 NodePDX Conference
+
+**Demystifying TypeScript Decorators**
+
+TypeScript decorators, based on the ES2016 decorator proposal and introduced as part of TypeScript 1.5, provide developers with a way to modify a JavaScript class, property, method, or method parameter using a convenient declarative syntax. We'll start this session by creating our own decorator, to see firsthand how they work. Then, we'll take a look at how decorators can be used in a variety of settings.
+
+[http://lanyrd.com/2016/nodepdx/sfchfg/](http://lanyrd.com/2016/nodepdx/sfchfg/)
+
+See the video of this talk at [https://www.youtube.com/watch?v=05FC8Wh7C5w](https://www.youtube.com/watch?v=05FC8Wh7C5w)
+
+### Other
 
 * 04/16/2016 **Utah Code Camp** - Using TypeScript Decorators with Angular
 * 03/19/2016 **Boise Code Camp** – Introduction to TypeScript, Using TypeScript Decorators with Angular, and Developing ASP.NET Core 1.0 Applications (http://boisecodecamp.com/sessions#james-churchill)
