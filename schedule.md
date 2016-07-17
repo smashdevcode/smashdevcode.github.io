@@ -7,28 +7,6 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 06/28 Portland TypeScript Meetup
-
-**Working with TypeScript Definitions**
-
-_With Peter Snider_
-
-Your TypeScript code doesn't live in isolation. In fact, almost every application that you develop using TypeScript will need to interact with libraries or frameworks that are written in JavaScript. Sometimes this code is from a third party, sometimes it's your own.
-
-TypeScript definition files allow you to leverage these assets in your projects, without having to sacrifice the benefits of working with pure TypeScript.
-
-In this talk, we'll show how to use the command line tool Typings to find and consume definition files for popular libraries and frameworks. We'll also walk through the process of writing your own definition file, for those times when a library or framework (either third party or your own) doesn't have a definition file available.
-
-[http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/](http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/)
-
-### 07/13-15 Newbie Remote Conf
-
-**Can Anyone Learn to Program?**
-
-Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how we can get (or stay) on the track to becoming a great developer.
-
-[https://allremoteconfs.com/newbie-2016](https://allremoteconfs.com/newbie-2016)
-
 ### 09/01 Willamette Valley Software Engineers Meetup
 
 **The Latest on TypeScript**
@@ -59,6 +37,28 @@ RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us
 
 ## Past Presentations/Talks
 
+### 07/13-15 Newbie Remote Conf
+
+**Can Anyone Learn to Program?**
+
+Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how we can get (or stay) on the track to becoming a great developer.
+
+[https://allremoteconfs.com/newbie-2016](https://allremoteconfs.com/newbie-2016)
+
+### 06/28 Portland TypeScript Meetup
+
+**Working with TypeScript Definitions**
+
+_With Peter Snider_
+
+Your TypeScript code doesn't live in isolation. In fact, almost every application that you develop using TypeScript will need to interact with libraries or frameworks that are written in JavaScript. Sometimes this code is from a third party, sometimes it's your own.
+
+TypeScript definition files allow you to leverage these assets in your projects, without having to sacrifice the benefits of working with pure TypeScript.
+
+In this talk, we'll show how to use the command line tool Typings to find and consume definition files for popular libraries and frameworks. We'll also walk through the process of writing your own definition file, for those times when a library or framework (either third party or your own) doesn't have a definition file available.
+
+[http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/](http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/)
+
 ### 06/19-21 NodePDX Conference
 
 **Demystifying TypeScript Decorators**
@@ -72,7 +72,9 @@ See the video of this talk at [https://www.youtube.com/watch?v=05FC8Wh7C5w](http
 ### Other
 
 * 04/16/2016 **Utah Code Camp** - Using TypeScript Decorators with Angular
-* 03/19/2016 **Boise Code Camp** – Introduction to TypeScript, Using TypeScript Decorators with Angular, and Developing ASP.NET Core 1.0 Applications (http://boisecodecamp.com/sessions#james-churchill)
+* 03/19/2016 **Boise Code Camp** – Developing ASP.NET Core 1.0 Applications (http://boisecodecamp.com/sessions#james-churchill)
+* 03/19/2016 **Boise Code Camp** – Using TypeScript Decorators with Angular (http://boisecodecamp.com/sessions#james-churchill)
+* 03/19/2016 **Boise Code Camp** – Introduction to TypeScript (http://boisecodecamp.com/sessions#james-churchill)
 * 03/03/2016 **Willamette Valley Software Engineers Meetup** – Developing ASP.NET 5 Applications
 * 02/23/2016 **Portland TypeScript Meetup** – Using TypeScript Decorators with Angular
 * 02/10/2016 **Angular Portland Meetup** – Using TypeScript with Angular
