@@ -7,6 +7,28 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
+### 08/30 Portland TypeScript Meetup
+
+**The Latest on TypeScript**
+
+_With Ken Howard_
+
+A new version of TypeScript is released about every three months. This means that new features—features that can make your applications more reliable and you more productive—are coming at you at a rapid pace. It’s difficult to know what you need to pay attention to and what you can ignore.
+
+We’re here to help!
+
+In this talk, Ken and James will highlight and demo some of the great TypeScript features that have been released in the last year. So join us for the latest on TypeScript!
+
+Learn about improvements in...
+
+* ES6/ES++ support 
+* Classes 
+* Modules 
+* Compiler configuration 
+* React support
+
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/](https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/)
+
 ### 09/01 Willamette Valley Software Engineers Meetup
 
 **The Latest on TypeScript**
@@ -26,6 +48,28 @@ ASP.NET Core (previously known as ASP.NET 5) is a new open-source (github.com/as
 In this talk, we'll review the development history of ASP.NET Core, set up our development environment, explore the .NET Core (dotnet) CLI, and create a simple app–from the command line and using Visual Studio. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core.
 
 [http://www.meetup.com/PADNUG/events/229163115/](http://www.meetup.com/PADNUG/events/229163115/)
+
+### 09/10 Seattle Code Camp
+
+**Reactive Programming with RxJS**
+
+RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we'll create some simple examples to explore what Observables are and how to use them. Along the way, we'll compare and contrast Observables to the other familiar tools in our JavaScript developer's toolbox: event listeners, callbacks, and promises. We'll also look at an Angular 2 example, which favors using Observables over promises.
+
+[https://seattle.codecamp.us/Session/Details/134](https://seattle.codecamp.us/Session/Details/134)
+
+**Can Anyone Learn to Program?**
+
+Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how we can get (or stay) on the track to becoming a great developer.
+
+[https://seattle.codecamp.us/Session/Details/133](https://seattle.codecamp.us/Session/Details/133)
+
+### 09/14-16 Angular Remote Conf
+
+**Reactive Programming with RxJS**
+
+RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we’ll create some simple examples to explore what Observables are and how to use them. Along the way, we’ll compare and contrast Observables to the other familiar tools in our JavaScript developer’s toolbox: event listeners, callbacks, and promises. We’ll also look at an Angular 2 example, which favors using Observables over promises.
+
+[https://allremoteconfs.com/angular-2016](https://allremoteconfs.com/angular-2016)
 
 ### 09/16 2016 UtahJS Conference
 
@@ -71,6 +115,8 @@ See the video of this talk at [https://www.youtube.com/watch?v=05FC8Wh7C5w](http
 
 ### Other
 
+**2016**
+
 * 04/16/2016 **Utah Code Camp** - Using TypeScript Decorators with Angular
 * 03/19/2016 **Boise Code Camp** – Developing ASP.NET Core 1.0 Applications (http://boisecodecamp.com/sessions#james-churchill)
 * 03/19/2016 **Boise Code Camp** – Using TypeScript Decorators with Angular (http://boisecodecamp.com/sessions#james-churchill)
@@ -79,6 +125,9 @@ See the video of this talk at [https://www.youtube.com/watch?v=05FC8Wh7C5w](http
 * 02/23/2016 **Portland TypeScript Meetup** – Using TypeScript Decorators with Angular
 * 02/10/2016 **Angular Portland Meetup** – Using TypeScript with Angular
 * 01/28/2016 **Portland TypeScript Meetup** - Up and Running with TypeScript Hands-On Workshop
+
+**2015**
+
 * 11/05/2015 **Eugene Oregon Programmers** – Developing ASP.NET 5 Applications
 * 10/13/2015 **Gorge Cloud Application Developers Meetup** – Developing with ASP.NET on Mac OS X
 * 09/12/2015 **Seattle Code Camp** – Developing with ASP.NET on Mac OS X
