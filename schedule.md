@@ -7,47 +7,33 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 08/30 Portland TypeScript Meetup
+### 11/20-21 Nodevember
 
-**The Latest on TypeScript**
+**Exploring TypeScript**
 
-_With Ken Howard_
-
-A new version of TypeScript is released about every three months. This means that new features—features that can make your applications more reliable and you more productive—are coming at you at a rapid pace. It’s difficult to know what you need to pay attention to and what you can ignore.
-
-We’re here to help!
-
-In this talk, Ken and James will highlight and demo some of the great TypeScript features that have been released in the last year. So join us for the latest on TypeScript!
-
-Learn about improvements in...
-
-* ES6/ES++ support 
-* Classes 
-* Modules 
-* Compiler configuration 
-* React support
-
-[https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/](https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/)
-
-### 09/01 Willamette Valley Software Engineers Meetup
-
-**The Latest on TypeScript**
+In this talk, we'll start with a brief history of TypeScript followed by a series of interactive demos that will show you the basics of the language. We'll also see how popular editors like GitHub's Atom and Microsoft's Visual Studio Code provide support for working with TypeScript.
 
 TypeScript, introduced by Microsoft in October 2012, is a strict superset of JavaScript that adds optional static typing and ES2015/++ language features such as classes, modules, arrow functions, decorators, async/await, and more. TypeScript's static typing allows tooling to provide richer support for features such as symbol-based navigation, statement completion, and code refactoring. All of this together helps ease the development of JavaScript applications.
 
-In this talk, we'll start with a brief history of TypeScript followed by a series of interactive demos that will show you the basics of the language. Then we'll look at some of the more advanced language features using Angular 2, React, and Node.js. We'll also see how popular editors like GitHub's Atom and Microsoft's Visual Studio Code provide support for working with TypeScript.
+[http://nodevember.org/](http://nodevember.org/)
 
-[http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/](http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/)
+## Past Presentations/Talks
 
-### 09/06 PADNUG (Portland Area .NET User Group)
+### 09/16 2016 UtahJS Conference
 
-**Getting Started with ASP.NET Core**
+**Reactive Programming with RxJS**
 
-ASP.NET Core (previously known as ASP.NET 5) is a new open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is being built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
+RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we'll create some simple examples to explore what Observables are and how to use them. Along the way, we'll compare and contrast Observables to the other familiar tools in our JavaScript developer's toolbox: event listeners, callbacks, and promises. We'll also look at an Angular 2 example, which favors using Observables over promises.
 
-In this talk, we'll review the development history of ASP.NET Core, set up our development environment, explore the .NET Core (dotnet) CLI, and create a simple app–from the command line and using Visual Studio. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core.
+[https://conf.utahjs.com/](https://conf.utahjs.com/)
 
-[http://www.meetup.com/PADNUG/events/229163115/](http://www.meetup.com/PADNUG/events/229163115/)
+### 09/14-16 Angular Remote Conf
+
+**Reactive Programming with RxJS**
+
+RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we'll create some simple examples to explore what Observables are and how to use them. Along the way, we'll compare and contrast Observables to the other familiar tools in our JavaScript developer's toolbox: event listeners, callbacks, and promises. We'll also look at an Angular 2 example, which favors using Observables over promises.
+
+[https://allremoteconfs.com/angular-2016](https://allremoteconfs.com/angular-2016)
 
 ### 09/10 Seattle Code Camp
 
@@ -63,23 +49,47 @@ Are there innate abilities that make some people better suited to become program
 
 [https://seattle.codecamp.us/Session/Details/133](https://seattle.codecamp.us/Session/Details/133)
 
-### 09/14-16 Angular Remote Conf
+### 09/06 PADNUG (Portland Area .NET User Group)
 
-**Reactive Programming with RxJS**
+**Getting Started with ASP.NET Core**
 
-RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we’ll create some simple examples to explore what Observables are and how to use them. Along the way, we’ll compare and contrast Observables to the other familiar tools in our JavaScript developer’s toolbox: event listeners, callbacks, and promises. We’ll also look at an Angular 2 example, which favors using Observables over promises.
+ASP.NET Core (previously known as ASP.NET 5) is a new open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is being built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
 
-[https://allremoteconfs.com/angular-2016](https://allremoteconfs.com/angular-2016)
+In this talk, we'll review the development history of ASP.NET Core, set up our development environment, explore the .NET Core (dotnet) CLI, and create a simple app–from the command line and using Visual Studio. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core.
 
-### 09/16 2016 UtahJS Conference
+[http://www.meetup.com/PADNUG/events/229163115/](http://www.meetup.com/PADNUG/events/229163115/)
 
-**Reactive Programming with RxJS**
+### 09/01 Willamette Valley Software Engineers Meetup
 
-RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us powerful tools for managing concurrency in our applications. Using RxJS, we use Observables to represent asynchronous data streams and then query those streams using one or more of the many available operators. In this talk, we'll create some simple examples to explore what Observables are and how to use them. Along the way, we'll compare and contrast Observables to the other familiar tools in our JavaScript developer's toolbox: event listeners, callbacks, and promises. We'll also look at an Angular 2 example, which favors using Observables over promises.
+**The Latest on TypeScript**
 
-[https://conf.utahjs.com/](https://conf.utahjs.com/)
+TypeScript, introduced by Microsoft in October 2012, is a strict superset of JavaScript that adds optional static typing and ES2015/++ language features such as classes, modules, arrow functions, decorators, async/await, and more. TypeScript's static typing allows tooling to provide richer support for features such as symbol-based navigation, statement completion, and code refactoring. All of this together helps ease the development of JavaScript applications.
 
-## Past Presentations/Talks
+In this talk, we'll start with a brief history of TypeScript followed by a series of interactive demos that will show you the basics of the language. Then we'll look at some of the more advanced language features using Angular 2, React, and Node.js. We'll also see how popular editors like GitHub's Atom and Microsoft's Visual Studio Code provide support for working with TypeScript.
+
+[http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/](http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/)
+
+### 08/30 Portland TypeScript Meetup
+
+**The Latest on TypeScript**
+
+_With Ken Howard_
+
+A new version of TypeScript is released about every three months. This means that new features—features that can make your applications more reliable and you more productive—are coming at you at a rapid pace. It's difficult to know what you need to pay attention to and what you can ignore.
+
+We're here to help!
+
+In this talk, Ken and James will highlight and demo some of the great TypeScript features that have been released in the last year. So join us for the latest on TypeScript!
+
+Learn about improvements in...
+
+* ES6/ES++ support 
+* Classes 
+* Modules 
+* Compiler configuration 
+* React support
+
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/](https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/)
 
 ### 07/13-15 Newbie Remote Conf
 
