@@ -7,7 +7,53 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 11/20-21 Nodevember
+### 02/28/2017 Portland TypeScript Meetup
+
+**Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/](https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/)
+
+### 03/18/2017 Boise Code Camp
+
+**Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
+[http://lanyrd.com/2017/boise-code-camp/sfqmgz/](http://lanyrd.com/2017/boise-code-camp/sfqmgz/)
+
+**ASP.NET Core for Node.js Developers**
+
+"Are you Node.js developer? Are you interested in learning a new cross-platform framework that offers better performance than Node.js and the benefits of a compiled, statically typed language? Or perhaps you're a front-end developer who's interested in learning a back-end development framework that's widely used by businesses both small and large?
+
+Microsoft has taken C#, .NET, and ASP.NET open-source and cross-platform (Linux, macOS, and Windows) with the release of .NET Core and ASP.NET Core. .NET Core gives developers flexibility and choice. Want to develop on macOS or Linux? No problem. Want to develop using the command line and the editor of your choice? You've got it. ASP.NET Core provides a ""build up"", middleware-based approach to developing web apps that'll feel more than familiar to Node.js developers.
+
+In this talk, I'll give you a gentle introduction to C# and show you how it compares to JavaScript. Then I'll show you how to install .NET Core on macOS and Windows and how to use the .NET Core CLI to create a simple console app from the command line. You'll also see how to use ASP.NET Core to create a simple web app."
+
+[http://lanyrd.com/2017/boise-code-camp/sfqmgg/](http://lanyrd.com/2017/boise-code-camp/sfqmgg/)
+
+## Past Presentations/Talks
+
+### 01/31/2017 Portland TypeScript Meetup
+
+**Exploring TypeScript**
+
+In this talk, we’ll start with a brief history of TypeScript followed by a series of interactive demos that will show you the basics of the language. We’ll also see how popular editors like GitHub’s Atom and Microsoft’s Visual Studio Code provide support for working with TypeScript.
+
+TypeScript, introduced by Microsoft in October 2012, is a strict superset of JavaScript that adds optional static typing and ES2015/++ language features such as classes, modules, arrow functions, decorators, async/await, and more. TypeScript’s static typing allows tooling to provide richer support for features such as symbol-based navigation, statement completion, and code refactoring. All of this together helps ease the development of JavaScript applications.
+
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/235989986/](https://www.meetup.com/Portland-TypeScript-Meetup/events/235989986/)
+
+### 11/20/2016-11/21/2016 Nodevember
 
 **Exploring TypeScript**
 
@@ -17,9 +63,7 @@ TypeScript, introduced by Microsoft in October 2012, is a strict superset of Jav
 
 [http://nodevember.org/](http://nodevember.org/)
 
-## Past Presentations/Talks
-
-### 09/16 2016 UtahJS Conference
+### 09/16/2016 UtahJS Conference
 
 **Reactive Programming with RxJS**
 
@@ -27,7 +71,7 @@ RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us
 
 [https://conf.utahjs.com/](https://conf.utahjs.com/)
 
-### 09/14-16 Angular Remote Conf
+### 09/14/2016-09/16/2016 Angular Remote Conf
 
 **Reactive Programming with RxJS**
 
@@ -35,7 +79,7 @@ RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us
 
 [https://allremoteconfs.com/angular-2016](https://allremoteconfs.com/angular-2016)
 
-### 09/10 Seattle Code Camp
+### 09/10/2016 Seattle Code Camp
 
 **Reactive Programming with RxJS**
 
@@ -49,7 +93,7 @@ Are there innate abilities that make some people better suited to become program
 
 [https://seattle.codecamp.us/Session/Details/133](https://seattle.codecamp.us/Session/Details/133)
 
-### 09/06 PADNUG (Portland Area .NET User Group)
+### 09/06/2016 PADNUG (Portland Area .NET User Group)
 
 **Getting Started with ASP.NET Core**
 
@@ -59,7 +103,7 @@ In this talk, we'll review the development history of ASP.NET Core, set up our d
 
 [http://www.meetup.com/PADNUG/events/229163115/](http://www.meetup.com/PADNUG/events/229163115/)
 
-### 09/01 Willamette Valley Software Engineers Meetup
+### 09/01/2016 Willamette Valley Software Engineers Meetup
 
 **The Latest on TypeScript**
 
@@ -69,7 +113,7 @@ In this talk, we'll start with a brief history of TypeScript followed by a serie
 
 [http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/](http://www.meetup.com/Willamette-Valley-Software-Engineers-Meetup/)
 
-### 08/30 Portland TypeScript Meetup
+### 08/30/2016 Portland TypeScript Meetup
 
 **The Latest on TypeScript**
 
@@ -91,7 +135,7 @@ Learn about improvements in...
 
 [https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/](https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/)
 
-### 07/13-15 Newbie Remote Conf
+### 07/13/2016-7/15/2016 Newbie Remote Conf
 
 **Can Anyone Learn to Program?**
 
@@ -99,7 +143,7 @@ Are there innate abilities that make some people better suited to become program
 
 [https://allremoteconfs.com/newbie-2016](https://allremoteconfs.com/newbie-2016)
 
-### 06/28 Portland TypeScript Meetup
+### 06/28/2016 Portland TypeScript Meetup
 
 **Working with TypeScript Definitions**
 
@@ -113,7 +157,7 @@ In this talk, we'll show how to use the command line tool Typings to find and co
 
 [http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/](http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/)
 
-### 06/19-21 NodePDX Conference
+### 06/19/2016-06/21/2016 NodePDX Conference
 
 **Demystifying TypeScript Decorators**
 
