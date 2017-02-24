@@ -19,6 +19,22 @@ In this talk, you'll learn the basics of the TypeScript language and how to incr
 
 [https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/](https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/)
 
+### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
+
+**3/8 9-10am ASP.NET Core Primer for ASP.NET Devs**
+
+ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
+
+In this module, we'll create a simple app using both the .NET Core command-line interface (CLI) and the latest tooling available in Visual Studio 2017. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core and how they compare to the ASP.NET that you know and love.
+
+**3/8 10-11am Exploring and Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this module, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio 2017 leverages the TypeScript Language Service to provide a rich JavaScript development experience including features such as symbol-based navigation, statement completion, and code refactoring. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
 ### 03/18/2017 Boise Code Camp
 
 **Migrating to TypeScript**
@@ -53,7 +69,7 @@ TypeScript, introduced by Microsoft in October 2012, is a strict superset of Jav
 
 [https://www.meetup.com/Portland-TypeScript-Meetup/events/235989986/](https://www.meetup.com/Portland-TypeScript-Meetup/events/235989986/)
 
-### 11/20/2016-11/21/2016 Nodevember
+### 11/20-11/21/2016 Nodevember
 
 **Exploring TypeScript**
 
@@ -71,7 +87,7 @@ RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us
 
 [https://conf.utahjs.com/](https://conf.utahjs.com/)
 
-### 09/14/2016-09/16/2016 Angular Remote Conf
+### 09/14-09/16/2016 Angular Remote Conf
 
 **Reactive Programming with RxJS**
 
@@ -135,7 +151,7 @@ Learn about improvements in...
 
 [https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/](https://www.meetup.com/Portland-TypeScript-Meetup/events/231830415/)
 
-### 07/13/2016-7/15/2016 Newbie Remote Conf
+### 07/13-7/15/2016 Newbie Remote Conf
 
 **Can Anyone Learn to Program?**
 
@@ -157,7 +173,7 @@ In this talk, we'll show how to use the command line tool Typings to find and co
 
 [http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/](http://www.meetup.com/Portland-TypeScript-Meetup/events/229370660/)
 
-### 06/19/2016-06/21/2016 NodePDX Conference
+### 06/19-06/21/2016 NodePDX Conference
 
 **Demystifying TypeScript Decorators**
 
