@@ -21,7 +21,7 @@ In this talk, you'll learn the basics of the TypeScript language and how to incr
 
 ### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
 
-**3/8 9-10am ASP.NET Core Primer for ASP.NET Devs**
+**3/8 9-10am Getting Started with ASP.NET Core in Visual Studio 2017**
 
 ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
 
