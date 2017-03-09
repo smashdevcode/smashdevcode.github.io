@@ -7,18 +7,6 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 02/28/2017 Portland TypeScript Meetup
-
-**Migrating to TypeScript**
-
-TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
-
-Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
-
-In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
-
-[https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/](https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/)
-
 ### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
 
 **3/8 9-10am Getting Started with ASP.NET Core in Visual Studio 2017**
@@ -57,7 +45,46 @@ In this talk, I'll give you a gentle introduction to C# and show you how it comp
 
 [http://lanyrd.com/2017/boise-code-camp/sfqmgg/](http://lanyrd.com/2017/boise-code-camp/sfqmgg/)
 
+### 03/29/2017 Donut.js
+
+**Can Anyone Learn to Program?**
+
+Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how our industry can grow and nurture great developers.
+
+[http://donutjs.club/](http://donutjs.club/)
+
+### 06/07-06/09/2017 Code PaLOUsa
+
+**Hey... You Got Static Types in My JavaScript!**
+
+As JavaScript applications continue to grow in size and complexity, the teams that develop and support them often find themselves looking for ways to help increase productivity and reduce errors. A well-known practice for reducing coding errors is to employ unit testing. A more recent approach is to add static typing to JavaScript by utilizing technologies like Microsoft's TypeScript or Facebook's Flow.
+
+Adding static types to JavaScript helps developers to detect errors in their code at design time, without having to execute their code. Static typing dramatically improves the overall development experience by adding support for symbol-based navigation, statement completion, and code refactoring.
+
+In this talk, we'll walk through a series of demos showcasing how TypeScript and Flow bring static typing to JavaScript. We'll look at how they are similar, how they differ, how they can help you write better code, and how they won't. By the end of this talk, you'll be on your way to answering the question "are static types a good fit for my JavaScript project?"
+
+Topics include:
+
+Comparing static and dynamic typing
+Reviewing the benefits and disadvantages of static dynamic
+Leveraging TypeScript and Flow in your projects
+Comparing TypeScript and Flow
+
+[http://www.codepalousa.com/Sessions/819](http://www.codepalousa.com/Sessions/819)
+
 ## Past Presentations/Talks
+
+### 02/28/2017 Portland TypeScript Meetup
+
+**Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/](https://www.meetup.com/Portland-TypeScript-Meetup/events/237273776/)
 
 ### 01/31/2017 Portland TypeScript Meetup
 
