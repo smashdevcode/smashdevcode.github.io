@@ -65,10 +65,10 @@ In this talk, we'll walk through a series of demos showcasing how TypeScript and
 
 Topics include:
 
-Comparing static and dynamic typing
-Reviewing the benefits and disadvantages of static dynamic
-Leveraging TypeScript and Flow in your projects
-Comparing TypeScript and Flow
+* Comparing static and dynamic typing
+* Reviewing the benefits and disadvantages of static dynamic
+* Leveraging TypeScript and Flow in your projects
+* Comparing TypeScript and Flow
 
 [http://www.codepalousa.com/Sessions/819](http://www.codepalousa.com/Sessions/819)
 
