@@ -12,9 +12,7 @@ My involvement in the Visual Studio 2017 Launch event came about through a partn
 
 ## Getting Started with ASP.NET Core in Visual Studio 2017
 
-
 <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-101/player" width="700" height="394" allowFullScreen frameBorder="0"></iframe>
-
 
 ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
  
@@ -22,9 +20,7 @@ In this module, we'll create a simple app using both the .NET Core command-line 
 
 ## Exploring and Migrating to TypeScript
 
-
 <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-102/player" width="700" height="394" allowFullScreen frameBorder="0"></iframe>
-
 
 TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
  
