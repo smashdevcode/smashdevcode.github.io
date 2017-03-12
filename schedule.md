@@ -55,6 +55,7 @@ Topics include:
 ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
 
 In this module, we'll create a simple app using both the .NET Core command-line interface (CLI) and the latest tooling available in Visual Studio 2017. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core and how they compare to the ASP.NET that you know and love.
+
 [https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/WEB-101](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/WEB-101)
 
 **3/8 10-11am Exploring and Migrating to TypeScript**
@@ -64,6 +65,7 @@ TypeScript is a statically typed superset of JavaScript that compiles to plain J
 Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
 
 In this module, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio 2017 leverages the TypeScript Language Service to provide a rich JavaScript development experience including features such as symbol-based navigation, statement completion, and code refactoring. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
 [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-102](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-102)
 
 ### 02/28/2017 Portland TypeScript Meetup
