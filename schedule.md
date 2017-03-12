@@ -7,22 +7,6 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
-
-**3/8 9-10am Getting Started with ASP.NET Core in Visual Studio 2017**
-
-ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
-
-In this module, we'll create a simple app using both the .NET Core command-line interface (CLI) and the latest tooling available in Visual Studio 2017. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core and how they compare to the ASP.NET that you know and love.
-
-**3/8 10-11am Exploring and Migrating to TypeScript**
-
-TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
-
-Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
-
-In this module, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio 2017 leverages the TypeScript Language Service to provide a rich JavaScript development experience including features such as symbol-based navigation, statement completion, and code refactoring. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
-
 ### 03/18/2017 Boise Code Camp
 
 **Migrating to TypeScript**
@@ -34,16 +18,6 @@ Luckily, benefitting from TypeScript doesn't require you to migrate your entire 
 In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
 
 [http://lanyrd.com/2017/boise-code-camp/sfqmgz/](http://lanyrd.com/2017/boise-code-camp/sfqmgz/)
-
-**ASP.NET Core for Node.js Developers**
-
-"Are you Node.js developer? Are you interested in learning a new cross-platform framework that offers better performance than Node.js and the benefits of a compiled, statically typed language? Or perhaps you're a front-end developer who's interested in learning a back-end development framework that's widely used by businesses both small and large?
-
-Microsoft has taken C#, .NET, and ASP.NET open-source and cross-platform (Linux, macOS, and Windows) with the release of .NET Core and ASP.NET Core. .NET Core gives developers flexibility and choice. Want to develop on macOS or Linux? No problem. Want to develop using the command line and the editor of your choice? You've got it. ASP.NET Core provides a ""build up"", middleware-based approach to developing web apps that'll feel more than familiar to Node.js developers.
-
-In this talk, I'll give you a gentle introduction to C# and show you how it compares to JavaScript. Then I'll show you how to install .NET Core on macOS and Windows and how to use the .NET Core CLI to create a simple console app from the command line. You'll also see how to use ASP.NET Core to create a simple web app."
-
-[http://lanyrd.com/2017/boise-code-camp/sfqmgg/](http://lanyrd.com/2017/boise-code-camp/sfqmgg/)
 
 ### 03/29/2017 Donut.js
 
@@ -73,6 +47,24 @@ Topics include:
 [http://www.codepalousa.com/Sessions/819](http://www.codepalousa.com/Sessions/819)
 
 ## Past Presentations/Talks
+
+### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
+
+**3/8 9-10am Getting Started with ASP.NET Core in Visual Studio 2017**
+
+ASP.NET Core is an open-source (github.com/aspnet/home) and cross-platform framework for building modern web apps using .NET. It is a significant redesign of ASP.NET that is built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac, and Linux.
+
+In this module, we'll create a simple app using both the .NET Core command-line interface (CLI) and the latest tooling available in Visual Studio 2017. Along the way, we'll also take a look at some of the key new concepts and features that are part of ASP.NET Core and how they compare to the ASP.NET that you know and love.
+[https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/WEB-101](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/WEB-101)
+
+**3/8 10-11am Exploring and Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this module, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio 2017 leverages the TypeScript Language Service to provide a rich JavaScript development experience including features such as symbol-based navigation, statement completion, and code refactoring. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+[https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-102](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/WEB-102)
 
 ### 02/28/2017 Portland TypeScript Meetup
 
