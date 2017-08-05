@@ -7,25 +7,56 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 03/18/2017 Boise Code Camp
+### 09/09/2017 Seattle Code Camp
 
-**Migrating to TypeScript**
+**Hey... You Got Static Types in My JavaScript!**
 
-TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+As JavaScript applications continue to grow in size and complexity, the teams that develop and support them often find themselves looking for ways to help increase productivity and reduce errors. A well-known practice for reducing coding errors is to employ unit testing. A more recent approach is to add static typing to JavaScript by utilizing technologies like Microsoft’s TypeScript or Facebook’s Flow.
 
-Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+Adding static types to JavaScript helps developers to detect errors in their code at design time, without having to execute their code. Static typing dramatically improves the overall development experience by adding support for symbol-based navigation, statement completion, and code refactoring.
 
-In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+In this talk, we’ll walk through a series of demos showcasing how TypeScript and Flow bring static typing to JavaScript. We’ll look at how they are similar, how they differ, how they can help you write better code, and how they won’t. By the end of this talk, you’ll be on your way to answering the question “are static types a good fit for my JavaScript project?”
 
-[http://lanyrd.com/2017/boise-code-camp/sfqmgz/](http://lanyrd.com/2017/boise-code-camp/sfqmgz/)
+Topics include:
 
-### 03/29/2017 Donut.js
+* Comparing static and dynamic typing
+* Reviewing the benefits and disadvantages of static and dynamic typing
+* Leveraging TypeScript and Flow in your projects
+* Comparing TypeScript and Flow
 
-**Can Anyone Learn to Program?**
+**You're Only Human: Common Development Traps and Pitfalls and How to Avoid Them**
 
-Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how our industry can grow and nurture great developers.
+Let’s face it, you’re only human.
 
-[http://donutjs.club/](http://donutjs.club/)
+Nobody sets out to make mistakes. But as human beings, we’re inherently flawed, so mistakes are inevitable. As a software developer, it can feel like the odds are increased exponentially. There are countless ways for projects to go awry.
+
+In my 17+ years of development experience, I’ve worked on small and large projects, solo and on teams, utilizing a wide variety of technologies and platforms, across many different industries. If there’s a way to mess something up, I’ve probably done it.
+
+In this talk, I’ll share with you some of the software development traps and pitfalls that I’ve encountered in my career. I’ll tell you how they happened and what we did to get out of them. We’ll look at ways to identify these problems as early as possible. Or better yet, how to avoid them altogether. Learn from my mistakes.
+
+Topics include:
+
+* Poor or missing requirements
+* Boiling the ocean
+* Gold plating
+* Failing to track changes to the project
+* Not writing unit tests
+* Not documenting decisions
+* Not supporting new team members
+* Not tracking or triaging new features or change requests
+* Failing to use realistic test data
+* Failing to automate at the beginning of a project
+* Not tracking all of your source code
+* Failing to communicate across the entire organization
+* Not being realistic with estimates
+* Not regularly reporting progress
+* Creating silos of responsibilities or knowledge
+* Not adopting a coding style
+* Fixing another developer’s code instead giving them feedback
+
+[https://seattle.codecamp.us/](https://seattle.codecamp.us/)
+
+## Past Presentations/Talks
 
 ### 06/07-06/09/2017 Code PaLOUsa
 
@@ -46,7 +77,25 @@ Topics include:
 
 [http://www.codepalousa.com/Sessions/819](http://www.codepalousa.com/Sessions/819)
 
-## Past Presentations/Talks
+### 03/29/2017 Donut.js
+
+**Can Anyone Learn to Program?**
+
+Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how our industry can grow and nurture great developers.
+
+[http://donutjs.club/](http://donutjs.club/)
+
+### 03/18/2017 Boise Code Camp
+
+**Migrating to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code. That's all great, but migrating an existing JavaScript project to TypeScript can seem like a daunting proposition.
+
+Luckily, benefitting from TypeScript doesn't require you to migrate your entire project to TypeScript. You can benefit from TypeScript by making incremental changes to your project.
+
+In this talk, you'll learn the basics of the TypeScript language and how to incrementally migrate a project to TypeScript. You'll also see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience. And you'll see how to use JSDoc comments and TypeScript Declaration (d.ts) files to refine the TypeScript Language Service's understanding of your code.
+
+[http://lanyrd.com/2017/boise-code-camp/sfqmgz/](http://lanyrd.com/2017/boise-code-camp/sfqmgz/)
 
 ### 03/07-03/08/2017 Visual Studio 2017 Launch and 20th Anniversary Event
 
