@@ -7,6 +7,16 @@ title: Teaching
 
 Here's a list of my Treehouse courses and workshops.
 
+## Coming Soon
+
+### [Building Services with ASP.NET Web API](https://teamtreehouse.com/library/building-services-with-aspnet-web-api/upcoming)
+
+**Available October 2017**
+
+Services expose data and processes through APIs (Application Programming Interfaces) implemented using common approaches or standards. Decoupling our back-end from our front-end makes it possible for our services to support multiple client apps. We can even allow other developers and organizations to consume and use our services to further broaden the reach of our applications.
+
+In this course, you'll learn how to use the ASP.NET Web API framework to build a RESTful service or HTTP API. As you learn about Web API, you'll create a service for the Fitness Frog single-page web app (SPA) developed using Angular.
+
 ## Available Now
 
 ### [Entity Framework Query Performance](https://teamtreehouse.com/library/entity-framework-query-performance)
@@ -27,9 +37,13 @@ Throughout this course you'll learn by example by completing hands-on coding exe
 
 In this course, you'll learn how to use Entity Framework Code First Migrations to propagate data model changes to your database.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cShjIXTSLKM" frameborder="0" allowfullscreen></iframe>
+
 ### [Entity Framework Basics](https://teamtreehouse.com/library/entity-framework-basics)
 
 In this course, you'll learn how to use Microsoft's Entity Framework to persist application data to a database. By the end of the course, you'll have learned how to use the Code First workflow, create entity classes, write LINQ queries, perform CRUD operations, and more.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8GTWGKocQsc" frameborder="0" allowfullscreen></iframe>
 
 ### [Getting Started with ASP.NET Core](https://teamtreehouse.com/library/getting-started-with-aspnet-core)
 
@@ -39,20 +53,29 @@ In this workshop, we'll answer the question "What is ASP.NET Core?", explore the
 
 In this course, you’ll learn how to create web forms using ASP.NET MVC. Along the way, you’ll use various field types and form validation as we build a web version of the Fitness Frog application from C# Basics.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l-MVZSfIXsA" frameborder="0" allowfullscreen></iframe>
+
 ### [ASP.NET MVC Basics](https://teamtreehouse.com/library/aspnet-mvc-basics)
 
 ASP.NET MVC is a popular server-side framework developed by Microsoft that is used to build dynamic websites. In this course, you'll learn about the basics of ASP.NET MVC while we build a comic book gallery website using Visual Studio Community. Along the way, you'll learn how to create a new project, add controllers and views, model data, and create repositories.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oK1STpd1m7c" frameborder="0" allowfullscreen></iframe>
 
 ### [Creating Your First ASP.NET MVC Website](https://teamtreehouse.com/library/creating-your-first-aspnet-mvc-website)
 
 In this workshop, you'll learn how to create an ASP.NET MVC website using Visual Studio.
 
-## Coming Soon
+### LiveCoding
 
-### [Building Services with ASP.NET Web API](https://teamtreehouse.com/library/building-services-with-aspnet-web-api/upcoming)
+In this series of livestream sessions, we'll build a simple ASP.NET Core web API and Angular client web app.
 
-**Available September 2017**
+Watch the videos on YouTube at:
 
-Services expose data and processes through APIs (Application Programming Interfaces) implemented using common approaches or standards. Decoupling our back-end from our front-end makes it possible for our services to support multiple client apps. We can even allow other developers and organizations to consume and use our services to further broaden the reach of our applications.
+* Week 1 (5/19/2017): [https://www.youtube.com/watch?v=hZDqJJ5tZeg](https://www.youtube.com/watch?v=hZDqJJ5tZeg)
+* Week 2 (7/28/2017): [https://www.youtube.com/watch?v=wCMOoeSHgQg](https://www.youtube.com/watch?v=wCMOoeSHgQg)
+* Week 3 (8/4/2017): [https://www.youtube.com/watch?v=JPPpbJ6fwKY](https://www.youtube.com/watch?v=JPPpbJ6fwKY)
+* Week 4 (8/11/2017): [https://www.youtube.com/watch?v=FIamyAGtWRQ](https://www.youtube.com/watch?v=FIamyAGtWRQ)
 
-In this course, you'll learn how to use the ASP.NET Web API framework to build a RESTful service or HTTP API. As you learn about Web API, you'll create a service for the Fitness Frog single-page web app (SPA) developed using Angular.
+Source code and additional notes are available at:
+
+[https://github.com/treehouse/livestream-aspnetcore-angular](https://github.com/treehouse/livestream-aspnetcore-angular)
