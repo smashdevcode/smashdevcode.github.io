@@ -34,6 +34,7 @@ Ask the Experts is an opportunity to bring your issues to the table and get help
 **A Comparison of Front-End JavaScript Frameworks**
 
 This talk will compare Angular, React, and Vue.js. What are the similarities? What are the differences? How easy are they to learn? What are the other considerations you should keep in mind?
+
 [https://www.meetup.com/Portland-JavaScript-Admirers/events/gkccxnyxhbfc/](https://www.meetup.com/Portland-JavaScript-Admirers/events/gkccxnyxhbfc/)
 
 ### 05/03/2018 Willamette Valley Software Engineers Meetup
@@ -59,6 +60,7 @@ Topics include:
 * Comparing static and dynamic typing
 * Reviewing the benefits and disadvantages of static and dynamic typing
 * Leveraging TypeScript in your projects
+
 [https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxdbkc/](https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxdbkc/)
 
 ### 09/21/2017 Squarespace
