@@ -9,15 +9,24 @@ Here's a list of my Treehouse courses and workshops.
 
 ## Coming Soon
 
-### [Building Services with ASP.NET Web API](https://teamtreehouse.com/library/building-services-with-aspnet-web-api/upcoming)
+**Stay tuned for updates!**
 
-**Available October 2017**
+## Available Now
+
+### [User Authentication with ASP.NET Identity](https://teamtreehouse.com/library/user-authentication-with-aspnet-identity)
+
+In this course, you'll learn how to leverage user authentication to secure an application and protect your users' data. You'll update an existing ASP.NET MVC application to use Microsoft's ASP.NET Identity system to implement cookie-based authentication.
+
+### [Using the Angular CLI](https://teamtreehouse.com/library/using-the-angular-cli)
+
+In this workshop, you'll learn how to use the Angular CLI to easily create, modify, and serve Angular apps.
+
+### [Building Services with ASP.NET Web API](https://teamtreehouse.com/library/building-services-with-aspnet-web-api)
 
 Services expose data and processes through APIs (Application Programming Interfaces) implemented using common approaches or standards. Decoupling our back-end from our front-end makes it possible for our services to support multiple client apps. We can even allow other developers and organizations to consume and use our services to further broaden the reach of our applications.
 
 In this course, you'll learn how to use the ASP.NET Web API framework to build a RESTful service or HTTP API. As you learn about Web API, you'll create a service for the Fitness Frog single-page web app (SPA) developed using Angular.
 
-## Available Now
 
 ### [Entity Framework Query Performance](https://teamtreehouse.com/library/entity-framework-query-performance)
 

@@ -5,7 +5,31 @@ title: Videos
 
 # Videos
 
-## Reactive Programming with RxJS
+## Misc
+
+### React vs. Angular vs. Vue
+
+You've heard of React and Angular... and there's this new thing called Vue? But you don't have time to learn all three. So, how do you choose?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xDhzYQ4VyCw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+## Treehouse Dev Team Show
+
+### Hype Driven Development
+
+In this episode, Treehouse Teacher, James Churchill, talks to Craig Dennis about Hype Driven Development.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4h6MIimIgBs" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+### Imposter Syndrome
+
+Kenneth Love talks about his Imposter Syndrome moment. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-23agZLMK9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Talks
+
+### Reactive Programming with RxJS
 
 **Recorded on 09/16/2016 as part of the 2016 [UtahJS Conference](https://conf.utahjs.com/)**
 
@@ -13,7 +37,7 @@ RxJS, the Reactive Extensions for JavaScript, is a set of libraries that give us
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajLD2K4ZUQ4" frameborder="0" allowfullscreen></iframe>
 
-## Can Anyone Learn to Program?
+### Can Anyone Learn to Program?
 
 **Recorded on 03/29/2017 as part of the March [Donut.js](http://donutjs.club/) Meeting**
 
@@ -21,7 +45,7 @@ Are there innate abilities that make some people better suited to become program
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o-T7cnElKMY" frameborder="0" allowfullscreen></iframe>
 
-## Getting Started with ASP.NET Core in Visual Studio 2017
+### Getting Started with ASP.NET Core in Visual Studio 2017
 
 **Recorded on 03/08/2017 as part of the Visual Studio 2017 Launch and 20th Anniversary Event**
 
@@ -31,7 +55,7 @@ In this module, we'll create a simple app using both the .NET Core command-line 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yDp-sHGKTWo" frameborder="0" allowfullscreen></iframe>
 
-## Exploring and Migrating to TypeScript
+### Exploring and Migrating to TypeScript
 
 **Recorded on 03/08/2017 as part of the Visual Studio 2017 Launch and 20th Anniversary Event**
 
@@ -43,7 +67,7 @@ In this module, you'll learn the basics of the TypeScript language and how to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9-l5UHl1JEE" frameborder="0" allowfullscreen></iframe>
 
-## Demystifying TypeScript Decorators
+### Demystifying TypeScript Decorators
 
 **Recorded on 06/19/2016 as part of the 2016 NodePDX Conference**
 

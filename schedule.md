@@ -7,6 +7,66 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
+### 07/17/2018 PADNUG: Ask the Experts
+
+**Differences in JS Frameworks (First of Two Sessions)**
+
+James Churchill will walk us through an exercise to learn how React, Angular, and Vue differ in coding style. *Come prepared to code!* :)
+
+Ask the Experts is an opportunity to bring your issues to the table and get help from industry experts! Each month we will have a different expertise available. Bring your laptop, your ideas, your own expertise and join us for this great new event!
+
+[https://www.meetup.com/PADNUG/events/251426638/](https://www.meetup.com/PADNUG/events/251426638/)
+
+### 09/18/2018 PADNUG: Ask the Experts
+
+**Differences in JS Frameworks (Second of Two Sessions)**
+
+James Churchill will walk us through an exercise to learn how React, Angular, and Vue differ in coding style. *Come prepared to code!* :)
+
+Ask the Experts is an opportunity to bring your issues to the table and get help from industry experts! Each month we will have a different expertise available. Bring your laptop, your ideas, your own expertise and join us for this great new event!
+
+[https://www.meetup.com/PADNUG/events/252756688/](https://www.meetup.com/PADNUG/events/252756688/)
+
+## Past Presentations/Talks
+
+### 05/23/2018 Portland JavaScript Admirers
+
+**A Comparison of Front-End JavaScript Frameworks**
+
+This talk will compare Angular, React, and Vue.js. What are the similarities? What are the differences? How easy are they to learn? What are the other considerations you should keep in mind?
+[https://www.meetup.com/Portland-JavaScript-Admirers/events/gkccxnyxhbfc/](https://www.meetup.com/Portland-JavaScript-Admirers/events/gkccxnyxhbfc/)
+
+### 05/03/2018 Willamette Valley Software Engineers Meetup
+
+**A Comparison of Front-End JavaScript Frameworks**
+
+This talk will compare Angular, React, and Vue.js. What are the similarities? What are the differences? How easy are they to learn? What are the other considerations you should keep in mind?
+
+[https://www.meetup.com/WVSE-meetup/events/248925574/](https://www.meetup.com/WVSE-meetup/events/248925574/)
+
+### 02/27/2018 Portland TypeScript Meetup
+
+**An Introduction to TypeScript or: How I Learned to Stop Worrying and Love Static Types**
+
+As JavaScript applications continue to grow in size and complexity, the teams that develop and support them often find themselves looking for ways to help increase productivity and reduce errors. A well-known practice for reducing coding errors is to employ unit testing. A more recent approach is to add static typing to JavaScript by utilizing technologies like Microsoft’s TypeScript.
+
+Adding static types to JavaScript helps developers to detect errors in their code at design time, without having to execute their code. Static typing dramatically improves the overall development experience by adding support for symbol-based navigation, statement completion, and code refactoring.
+
+In this talk, we’ll walk through a series of demos showcasing how TypeScript brings static typing to JavaScript. We’ll look at how TypeScript can can help you write better code, and how it won’t. By the end of this talk, you’ll be on your way to answering the question “are static types a good fit for my JavaScript project?”
+
+Topics include:
+
+* Comparing static and dynamic typing
+* Reviewing the benefits and disadvantages of static and dynamic typing
+* Leveraging TypeScript in your projects
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxdbkc/](https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxdbkc/)
+
+### 09/21/2017 Squarespace
+
+**Can Anyone Learn to Program?**
+
+Are there innate abilities that make some people better suited to become programmers? Or can anyone learn to program? Does talent alone create success or can dedication and hard work make up for an initial lack of talent? This talk will examine the fixed and growth mindsets and what they can teach us about ourselves and how we can get (or stay) on the track to becoming a great developer.
+
 ### 09/09/2017 Seattle Code Camp
 
 **Hey... You Got Static Types in My JavaScript!**
@@ -56,8 +116,6 @@ Topics include:
 
 [https://seattle.codecamp.us/](https://seattle.codecamp.us/)
 
-## Past Presentations/Talks
-
 ### 06/07-06/09/2017 Code PaLOUsa
 
 **Hey... You Got Static Types in My JavaScript!**
@@ -76,6 +134,14 @@ Topics include:
 * Comparing TypeScript and Flow
 
 [http://www.codepalousa.com/Sessions/819](http://www.codepalousa.com/Sessions/819)
+
+### 04/21/2017 The Tech Academy
+
+**Introduction to TypeScript**
+
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It can help you be more productive and write higher quality code.
+
+In this talk, you'll learn the basics of the TypeScript language and see how Visual Studio Code leverages the TypeScript Language Service to provide a rich JavaScript development experience.
 
 ### 03/29/2017 Donut.js
 
