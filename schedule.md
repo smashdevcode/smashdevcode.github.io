@@ -7,15 +7,27 @@ title: Schedule
 
 ## Upcoming Presentations/Talks
 
-### 07/17/2018 PADNUG: Ask the Experts
+### 10/30/2018 Portland TypeScript Meetup
 
-**Differences in JS Frameworks (First of Two Sessions)**
+**What's New in TypeScript**
 
-James Churchill will walk us through an exercise to learn how React, Angular, and Vue differ in coding style. *Come prepared to code!* :)
+In this talk, we'll walkthrough a series of live coding demos showing off some of the new features that have been added to TypeScript over the last year or so.
 
-Ask the Experts is an opportunity to bring your issues to the table and get help from industry experts! Each month we will have a different expertise available. Bring your laptop, your ideas, your own expertise and join us for this great new event!
+[https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxnbnc/](https://www.meetup.com/Portland-TypeScript-Meetup/events/tdksvnyxnbnc/)
 
-[https://www.meetup.com/PADNUG/events/251426638/](https://www.meetup.com/PADNUG/events/251426638/)
+## Past Presentations/Talks
+
+### 10/02/2018 PADNUG (Portland Area .NET User Group)
+
+**TypeScript for the C# Dev**
+
+Here's the situation: You're an experienced C# developer and you're a master at developing applications using Visual Studio. But now you're tasked with working on a project where more than 2/3 of the code will be written in JavaScript. No problem, right? You dive in and well, things start to get out of control. If only developing applications in JavaScript was more like developing applications using C#. You hear about this thing called TypeScript...
+
+Will TypeScript solve all of your problems? What exactly is TypeScript and how does it work? How do you get started with using TypeScript? Will it keep you from having to take the time to gain a deep understanding of JavaScript?
+
+In this talk, we'll take a look at how TypeScript can help ease the development of JavaScript-based applications. We'll review what will feel familiar to you as a C# developer, and what might surprise you. And we'll take a look at some of the common mistakes that developers make when learning TypeScript (and by extension, JavaScript).
+
+[https://www.meetup.com/PADNUG/events/jscxtmyxnbdb/](https://www.meetup.com/PADNUG/events/jscxtmyxnbdb/)
 
 ### 09/18/2018 PADNUG: Ask the Experts
 
@@ -27,7 +39,36 @@ Ask the Experts is an opportunity to bring your issues to the table and get help
 
 [https://www.meetup.com/PADNUG/events/252756688/](https://www.meetup.com/PADNUG/events/252756688/)
 
-## Past Presentations/Talks
+### 09/09/2017 Seattle Code Camp
+
+**A Comparison of Frontend JavaScript Frameworks: React vs. Angular vs. Vue**
+
+Are you interested in learning a frontend JavaScript framework but don't know which one is the best fit for you or your team? Or maybe you're currently using a framework and you're interested in what another framework has to offer?
+
+In this talk, we'll compare React, Angular, and Vue. What are the strengths and weaknesses of each? What are the similarities? What are the differences? How easy are they to learn? What are the other considerations you should keep in mind?
+
+Along the way, we'll build out a simple demo app in each, taking a hands-on look at:
+
+* Getting started
+* Project creation
+* Project layout
+* Dev workflow
+* Basic component development
+* Templating
+* Properties
+* Events
+
+[https://seattle.codecamp.us/](https://seattle.codecamp.us/)
+
+### 07/17/2018 PADNUG: Ask the Experts
+
+**Differences in JS Frameworks (First of Two Sessions)**
+
+James Churchill will walk us through an exercise to learn how React, Angular, and Vue differ in coding style. *Come prepared to code!* :)
+
+Ask the Experts is an opportunity to bring your issues to the table and get help from industry experts! Each month we will have a different expertise available. Bring your laptop, your ideas, your own expertise and join us for this great new event!
+
+[https://www.meetup.com/PADNUG/events/251426638/](https://www.meetup.com/PADNUG/events/251426638/)
 
 ### 05/23/2018 Portland JavaScript Admirers
 
