@@ -53,7 +53,7 @@ Ask the Experts is an opportunity to bring your issues to the table and get help
 
 [https://www.meetup.com/PADNUG/events/252756688/](https://www.meetup.com/PADNUG/events/252756688/)
 
-### 09/09/2017 Seattle Code Camp
+### 09/15/2018 Seattle Code Camp
 
 **A Comparison of Frontend JavaScript Frameworks: React vs. Angular vs. Vue**
 
