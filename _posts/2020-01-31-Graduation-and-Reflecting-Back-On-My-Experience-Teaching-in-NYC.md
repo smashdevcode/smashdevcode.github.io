@@ -33,7 +33,3 @@ None of this would've been possible without the amazing work of everyone at WOS.
 Lastly, I'm thankful for my wonderful students. We all learned a lot together and had a good time along the way. Congrats to John Vera, Jason Lu, Mohammed Salam, Sarthak Thakur, and William Lawlor for graduating from the program and good luck with all of your future endeavors!
 
 ![My Bootcamp Students]({{ site.url }}/images/graduation-reflecting-back-on-teaching-in-nyc/my-bootcamp-students.jpg){: .center-image }
-
-
-Add alt text
-My bootcamp students
