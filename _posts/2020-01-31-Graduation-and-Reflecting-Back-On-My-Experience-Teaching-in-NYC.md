@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Graduation and Reflecting Back On My Experience Teaching in NYC"
