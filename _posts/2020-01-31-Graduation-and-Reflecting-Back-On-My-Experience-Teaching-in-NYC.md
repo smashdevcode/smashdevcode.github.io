@@ -9,7 +9,7 @@ comments: true
 
 Last year, I taught a 10-week .NET/C# Full Stack Web Development bootcamp in New York City (Astoria, Queens). This last Monday (1/27), I attended my students' graduation from the education/training part of the program provided by [Workforce Opportunity Services (WOS)](https://www.wforce.org/) and their client [PSEG](https://www.pseg.com/). Graduation was an opportunity for me to reflect back on my experience.
 
-![Graduation at the Newark Museum]({{ site.url }}/images/graduation-reflecting-back-on-teaching-in-nyc/graduation-at-the-newark-museum.png){: .center-image }
+![Graduation at the Newark Museum]({{ site.url }}/images/graduation-reflecting-back-on-teaching-in-nyc/graduation-at-the-newark-museum.jpg){: .center-image }
 
 ## The Bootcamp
 
@@ -33,7 +33,7 @@ None of this would've been possible without the amazing work of everyone at WOS.
 
 Lastly, I'm thankful for my wonderful students. We all learned a lot together and had a good time along the way. Congrats to John Vera, Jason Lu, Mohammed Salam, Sarthak Thakur, and William Lawlor for graduating from the program and good luck with all of your future endeavors!
 
-![My Bootcamp Students]({{ site.url }}/images/graduation-reflecting-back-on-teaching-in-nyc/my-bootcamp-students.png){: .center-image }
+![My Bootcamp Students]({{ site.url }}/images/graduation-reflecting-back-on-teaching-in-nyc/my-bootcamp-students.jpg){: .center-image }
 
 
 Add alt text
