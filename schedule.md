@@ -11,6 +11,26 @@ Nothing scheduled at this time!
 
 ## Past Presentations/Talks
 
+### 11/19/2019 PADNUG: Ask the Experts
+
+**Using JavaScript in an ASP.NET World - Code Along Edition!**
+
+James Churchill will expand on his presentation from November 5 to allow you to actively develop along with him!
+
+Ask the Experts is an opportunity to bring your issues to the table and get help from industry experts! Each month we will have a different expertise available. Bring your laptop, your ideas, your own expertise and join us for this great new event!
+
+[https://www.meetup.com/PADNUG/events/zqzmrpyzpbzb/](https://www.meetup.com/PADNUG/events/zqzmrpyzpbzb/)
+
+### 11/05/2019 PADNUG (Portland Area .NET User Group)
+
+**Using JavaScript in an ASP.NET World**
+
+Do you have an ASP.NET application that's in need of modernization? Are you interested in doing more in the client/browser but you're reluctant to add JavaScript to your project? Do you already have JavaScript in your project but you're having a difficult time maintaining or updating that code?
+
+C# developers are often dragged kicking and screaming into the world of JavaScript, but it doesn't have to be that way. In this talk, you'll see how you can add JavaScript to your ASP.NET projects and still feel good (and confident) about the code you're writing. We'll start with a server-side rendered search page and refactor it to use JavaScript to prevent page postbacks.
+
+[https://www.meetup.com/PADNUG/events/jscxtmyzpbhb/](https://www.meetup.com/PADNUG/events/jscxtmyzpbhb/)
+
 ### 04/04/2019 Willamette Valley Software Engineers Meetup
 
 **TypeScript for the C# Dev**
