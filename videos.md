@@ -7,6 +7,12 @@ title: Videos
 
 ## Misc
 
+### How to Become a Lifelong Learner
+
+Lifelong learners recognize that learning just doesn't happen in school or at work—it's an ongoing process that can happen anytime, anywhere. In this video, learn what it means to be a lifelong learner as a software developer.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wvRbR6HGYJk" frameborder="0" allow="encrypted-media;" allowfullscreen></iframe>
+
 ### React vs. Angular vs. Vue
 
 You've heard of React and Angular... and there's this new thing called Vue? But you don't have time to learn all three. So, how do you choose?
