@@ -5,6 +5,10 @@ title: About
 
 # About
 
+## Bio
+
+I'm a self-taught developer who is passionate about helping others become developers. My deep technical background combined with my education experience puts me in a unique position to not only teach people how to code, but how to thrive as a developer. 
+
 ## Q&A
 
 ### When did you first become interested in programming?
@@ -24,7 +28,3 @@ In the year after we got married, my wife and I bought a 100+ year old home and 
 To keep costs down, we were doing almost all of the work ourselves, including the electrical wiring and plumbing. Never having done this kind of work before, it required a lot of self-learning, including reading books, watching HGTV, and inspecting new construction projects on the weekends.
 
 We also learned a lot about ourselves and each other throughout the process. For example, I was terrible at estimating how long any given project would take. I thought the kitchen remodel would take less than a month to finish; it ended up taking a year. Lastly, sometimes (probably most of the time) it's best to not know all of the details before you start a new project or any endeavor in your life, otherwise you might risk never getting started (i.e. paralysis by analysis, fear of failure, etc.)
-
-## Bio
-
-James is a developer, educator, and presenter who loves to create things, learn new technologies, and talk about programming. He's also a seasoned consultant that has architected and developed interesting and challenging software applications for companies across a diverse set of industries.
