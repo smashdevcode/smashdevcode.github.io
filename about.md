@@ -7,7 +7,7 @@ title: About
 
 ## Bio
 
-I'm a self-taught developer who is passionate about helping others become developers. My deep technical background combined with my education experience puts me in a unique position to not only teach people how to code, but how to thrive as a developer. 
+I'm a developer and educator who loves using technology to create world-class business solutions and fantastic customer experiences. I've challenged myself throughout my career to learn new skills and technologies, apply that knowledge, and help others in their software developer journeys.
 
 ## Q&A
 
