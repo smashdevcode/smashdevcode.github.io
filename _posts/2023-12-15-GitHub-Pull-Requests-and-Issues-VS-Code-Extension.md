@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub Pull Requests and Issues VS Code Extension"
 date: 2023-12-15 09:00:00 -0800
-tags: [AI]
+tags: [GitHub, Visual Studio Code, Extensions]
 comments: true
 ---
 
