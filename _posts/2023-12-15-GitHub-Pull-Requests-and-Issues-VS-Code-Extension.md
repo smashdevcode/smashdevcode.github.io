@@ -6,7 +6,7 @@ tags: [GitHub, Visual Studio Code, Extensions]
 comments: true
 ---
 
-The other day I was starting to review a large pull request in GitHub's website. I was getting frustrated with the experience (overall slowness of the web UI), so I decided to see if there was a better way. I found the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension for Visual Studio Code.
+The other day I was starting to review a large pull request on GitHub's website. I was getting frustrated with the experience (overall slowness of the web UI), so I decided to see if there was a better way. I found the GitHub Pull Requests and Issues extension for Visual Studio Code.
 
 This extension allows you to view and comment on pull requests and issues directly within Visual Studio Code. For large pull requests, it's a much better experience than using the GitHub website, and it's a great way to stay in the flow of your work.
 
@@ -18,7 +18,7 @@ After installing the extension, you'll need to sign in to GitHub (VS Code should
 
 ## Using the Extension
 
-After installing the extension, you'll see a new icon in your Activity Bar (the left sidebar within VS Code). Clicking on this icon will open the Pull Requests and Issues tab.
+You'll see a new icon in your Activity Bar (the left sidebar within VS Code). Clicking on this icon will open the Pull Requests and Issues tab.
 
 ![GitHub Pull Requests and Issues Activity Bar Icon](/images/github-pull-requests-and-issues-vs-code-extension/github-pr-vs-code-extension1.png)
 
@@ -26,7 +26,7 @@ The Pull Requests tab will show you all of the pull requests for the repository 
 
 ![GitHub Pull Requests and Issues Pull Requests Tab](/images/github-pull-requests-and-issues-vs-code-extension/github-pr-vs-code-extension2.png)
 
-Then you can select your base branch, provide a name and description, and click the "Create Pull Request" button.
+Then you can select your base branch, provide a name and description, and click the "Create" button.
 
 ![GitHub Pull Requests and Issues Create Pull Request](/images/github-pull-requests-and-issues-vs-code-extension/github-pr-vs-code-extension3.png)
 
@@ -48,7 +48,7 @@ You can also reply to existing comments or resolve conversations.
 
 ## Give It a Try
 
-Want to give it a try? I created a simple "Happy Holidays" repository that you can use to test out the extension. Send me a message and I'll add you as a collaborator (or you can fork the repo and create your own pull request). You can find it here: [smashdevcode/happy-holidays](https://github.com/smashdevcode/happy-holidays/pull/1).
+_Want to give it a try?_ I created a simple "Happy Holidays" repository that you can use to test out the extension. Send me a message and I'll add you as a collaborator (or you can fork the repo and create your own pull request). You can find it here: [smashdevcode/happy-holidays](https://github.com/smashdevcode/happy-holidays/pull/1).
 
 ## Resources
 
